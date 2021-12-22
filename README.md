@@ -24,7 +24,7 @@ With the establishment of the ACS, there is a need (and opportunity) to re-estab
 a shared reference dataset collection.
 By setting up a formal collaboration between the ACS and CLEX we can leverage
 the existing code/expertise at CLEX and the dedicated ACS shared storage space at NCI
-(project ia39) to deliver such a collection. 
+to deliver such a collection. 
 
 ### Who's involved? 
 
@@ -40,3 +40,10 @@ to collect information from the Australian climate research community about the 
 people would like to see included in the collection.
 We won't be able to support every dataset,
 but we'll do our best to support those that are widely requested.
+
+### Access
+
+The collection will be hosted in [project ia39](https://my.nci.org.au/mancini/project/ia39) on NCI.
+When the collection goes live (date TBC),
+access will be open to anyone in the Australian climate research community.
+
