@@ -1,0 +1,525 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPCC &#8212; My Jupyter Book</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="GPCP" href="gpcp.html" />
+    <link rel="prev" title="GHCN" href="ghcn.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Australian Community Reference Climate Data Collection @ NCI
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  The reference collection
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="agcd.html">
+   AGCD post processed
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="cmap.html">
+   CMAP
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="cmip6_etccdi.html">
+   CMIP6 ETCCDI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="cmorph.html">
+   CMORPH
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="frogs.html">
+   FROGS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ghcn.html">
+   GHCN
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   GPCC
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="gpcp.html">
+   GPCP
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/gpcc.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview">
+   Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-download">
+   Data download
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-location">
+   Data location
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#license">
+   License
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-citations">
+   Data citations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#acknowledgement">
+   Acknowledgement
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#author-note">
+   Author note
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assistance">
+   Assistance
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>GPCC</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview">
+   Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-download">
+   Data download
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-location">
+   Data location
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#license">
+   License
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-citations">
+   Data citations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#acknowledgement">
+   Acknowledgement
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#author-note">
+   Author note
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assistance">
+   Assistance
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="gpcc">
+<h1>GPCC<a class="headerlink" href="#gpcc" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>The Global Precipitation Climatology Centre (GPCC) provides gridded gauge-analysis products derived from quality controlled station data.
+There are different products available; we only downloaded the full reanalysis.
+The latest version of the full reanalysis is v2022 for monthly and v2020 for daily
+<a class="reference external" href="https://opendata.dwd.de/climate_environment/GPCC/html/fulldata-monthly_v2022_doi_download.html">monthly</a> and
+<a class="reference external" href="https://opendata.dwd.de/climate_environment/GPCC/html/fulldata-daily_v2020_doi_download.html">daily</a>
+they cover from 1891 to respectively 2020 and 2019.
+NB. while v2022 has been released, the actual files are not yet available!</p>
+<p>The data is available on 4 global grids for monthly and only at 1.0 degrees resolution for daily:</p>
+<ul class="simple">
+<li><p>0.25 degree latitude x 0.25 degree longitude global grid (1440 x 720) - only monthly</p></li>
+<li><p>0.5 degree latitude x 0.5 degree longitude global grid (720 x 360) - only monthly</p></li>
+<li><p>1.0 degree latitude x 1.0 degree longitude global grid (360 x 180)</p></li>
+<li><p>2.5 degree latitude x 2.5 degree longitude global grid (144 x 72) - only monthly</p></li>
+</ul>
+<p>The data is not bias-corrected for gauges errors,
+but estimates on these are also provided.
+More information and a visualization tool for the dataset is available on the
+<a class="reference external" href="https://www.dwd.de/EN/ourservices/gpcc/gpcc.html">GPCC website</a>.
+For a review of the data check the
+<a class="reference external" href="https://climatedataguide.ucar.edu/climate-data/gpcc-global-precipitation-climatology-centre">UCAR Climate Data Guide</a>.</p>
+</div>
+<div class="section" id="data-download">
+<h2>Data download<a class="headerlink" href="#data-download" title="Permalink to this headline">¶</a></h2>
+<p>The data is downloaded from the <a class="reference external" href="https://opendata.dwd.de/climate_environment/GPCC/">GPCC data server</a>.
+Updates are run once a new version is released.
+To run the script: <code class="docutils literal notranslate"><span class="pre">./gpcc_download.sh</span></code>.
+A record of updates is kept in <code class="docutils literal notranslate"><span class="pre">update_log.txt</span></code>.</p>
+</div>
+<div class="section" id="data-location">
+<h2>Data location<a class="headerlink" href="#data-location" title="Permalink to this headline">¶</a></h2>
+<p>We’ve downloaded GPCC data to</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">g</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">ia39</span><span class="o">/</span><span class="n">aus</span><span class="o">-</span><span class="n">ref</span><span class="o">-</span><span class="n">clim</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">nci</span><span class="o">/</span><span class="n">gpcc</span><span class="o">/</span><span class="n">replica</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">full_data_</span><span class="o">&lt;</span><span class="n">frequency</span><span class="o">&gt;</span><span class="n">_</span><span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;/&lt;</span><span class="n">grid</span><span class="o">&gt;/&lt;</span><span class="n">files</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>where <code class="docutils literal notranslate"><span class="pre">&lt;version&gt;</span></code> is:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">v1</span></code>: daily data only on 1.0 X 1.0 degree grid</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">v6</span></code>: monthly data only on a 0.5 X 0.5 degree grid from 1901 to 2010</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">v7</span></code>: monthly data only on 0.5 X 0.5 and 2.5 X 2.5 degrees grid from 1901 to 2013</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">v2020</span></code>: on 4 grids for monthly and 1.0 X 1.0 grid for daily (as for V2022), from 1891 to 2019</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">v2022</span></code>: full dataset as described in overview</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;frequency&gt;</span></code> is:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">mon</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">day</span></code></p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;grid&gt;</span></code> is:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">g025</span></code> for 0.25 x 0.25</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">g05</span></code> for 0.5 x 0.5</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">g10</span></code> for 1.0 x 1.0</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">g25</span></code> for 2.5 x 2.5</p></li>
+</ul>
+</div>
+<div class="section" id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p>Unknown.</p>
+</div>
+<div class="section" id="data-citations">
+<h2>Data citations<a class="headerlink" href="#data-citations" title="Permalink to this headline">¶</a></h2>
+<p>v2022 monthly (different citations for each resolution):</p>
+<ul class="simple">
+<li><p>Schneider, Udo; Hänsel, Stephanie; Finger, Peter; Rustemeier, Elke; Ziese, Markus (2022): GPCC Full Data Monthly Product Version 2022 at 0.25°: Monthly Land-Surface Precipitation from Rain-Gauges built on GTS-based and Historical Data. DOI: 10.5676/DWD_GPCC/FD_M_V2022_025</p></li>
+<li><p>Schneider, Udo; Hänsel, Stephanie; Finger, Peter; Rustemeier, Elke; Ziese, Markus (2022): GPCC Full Data Monthly Product Version 2022 at 0.5°: Monthly Land-Surface Precipitation from Rain-Gauges built on GTS-based and Historical Data. DOI: 10.5676/DWD_GPCC/FD_M_V2022_050</p></li>
+<li><p>Schneider, Udo; Hänsel, Stephanie; Finger, Peter; Rustemeier, Elke; Ziese, Markus (2022): GPCC Full Data Monthly Product Version 2022 at 1.0°: Monthly Land-Surface Precipitation from Rain-Gauges built on GTS-based and Historical Data. DOI: 10.5676/DWD_GPCC/FD_M_V2022_100</p></li>
+<li><p>Schneider, Udo; Hänsel, Stephanie; Finger, Peter; Rustemeier, Elke; Ziese, Markus (2022): GPCC Full Data Monthly Product Version 2022 at 2.5°: Monthly Land-Surface Precipitation from Rain-Gauges built on GTS-based and Historical Data. DOI: 10.5676/DWD_GPCC/FD_M_V2022_250</p></li>
+</ul>
+<p>v2020 daily:</p>
+<ul class="simple">
+<li><p>Ziese, Markus; Rauthe-Schöch, Armin; Becker, Andreas; Finger, Peter; Rustemeier, Elke; Schneider, Udo (2020):
+GPCC Full Data Daily Version 2020 at 1.0°: Daily Land-Surface Precipitation from Rain-Gauges built on GTS-based and Historic Data.
+<a class="reference external" href="https://doi.org/10.5676/DWD_GPCC/FD_D_V2020_100">https://doi.org/10.5676/DWD_GPCC/FD_D_V2020_100</a></p></li>
+</ul>
+<p>v2020 monthly (different citations for each resolution):</p>
+<ul class="simple">
+<li><p>Schneider, Udo; Becker, Andreas; Finger, Peter; Rustemeier, Elke; Ziese, Markus (2020):
+GPCC Full Data Monthly Product Version 2020 at 0.25°:
+Monthly Land-Surface Precipitation from Rain-Gauges built on GTS-based and Historical Data.
+<a class="reference external" href="https://doi.org/10.5676/DWD_GPCC/FD_M_V2020_025">https://doi.org/10.5676/DWD_GPCC/FD_M_V2020_025</a></p></li>
+<li><p>Schneider, Udo; Becker, Andreas; Finger, Peter; Rustemeier, Elke; Ziese, Markus (2020):
+GPCC Full Data Monthly Product Version 2020 at 0.5°:
+Monthly Land-Surface Precipitation from Rain-Gauges built on GTS-based and Historical Data.
+<a class="reference external" href="https://doi.org/10.5676/DWD_GPCC/FD_M_V2020_050">https://doi.org/10.5676/DWD_GPCC/FD_M_V2020_050</a></p></li>
+<li><p>Schneider, Udo; Becker, Andreas; Finger, Peter; Rustemeier, Elke; Ziese, Markus (2020):
+GPCC Full Data Monthly Product Version 2020 at 1.0°:
+Monthly Land-Surface Precipitation from Rain-Gauges built on GTS-based and Historical Data.
+<a class="reference external" href="https://doi.org/10.5676/DWD_GPCC/FD_M_V2020_100">https://doi.org/10.5676/DWD_GPCC/FD_M_V2020_100</a></p></li>
+<li><p>Schneider, Udo; Becker, Andreas; Finger, Peter; Rustemeier, Elke; Ziese, Markus (2020):
+GPCC Full Data Monthly Product Version 2020 at 2.5°:
+Monthly Land-Surface Precipitation from Rain-Gauges built on GTS-based and Historical Data.
+<a class="reference external" href="https://doi.org/10.5676/DWD_GPCC/FD_M_V2020_250">https://doi.org/10.5676/DWD_GPCC/FD_M_V2020_250</a></p></li>
+</ul>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<p>Becker A, Finger P, Meyer-Christoffer A, Rudolf B, Schamm K, Schneider U, and Ziese M (2013).
+A description of the global land-surface precipitation data products of the Global Precipitation Climatology Centre
+with sample applications including centennial (trend) analysis from 1901–present.
+<em>Earth Systems Science Data</em>, 5, 71–99.
+<a class="reference external" href="https://doi.org/10.5194/essd-5-71-2013">https://doi.org/10.5194/essd-5-71-2013</a></p>
+<p>Schneider U, Becker A, Finger P, Meyer-Christoffer A, Ziese M, and Rudolf B (2014).
+GPCC’s new land surface precipitation climatology based on quality-controlled in situ data
+and its role in quantifying the global water cycle.
+<em>Theoretical and Applied Climatology</em>, 115, 15–40.
+<a class="reference external" href="https://doi.org/10.1007/s00704-013-0860-x">https://doi.org/10.1007/s00704-013-0860-x</a></p>
+<p>Ziese M, Schneider U, Meyer-Christoffer A, Schamm K, Vido J, Finger P, Bissolli P, Pietzsch S, and Becker A (2014).
+The GPCC Drought Index – a new, combined and gridded global drought index
+<em>Earth Systems Science Data</em> 6, 285–295.
+<a class="reference external" href="https://doi.org/10.5194/essd-6-285-2014">https://doi.org/10.5194/essd-6-285-2014</a></p>
+<p>Schamm K, Ziese M, Becker A, Finger P, Meyer-Christoffer A, Schneider U, Schröder M, and Stender P (2014).
+Global gridded precipitation over land: a description of the new GPCC First Guess Daily product.
+<em>Earth System Science Data</em>, 6, 49–60.
+<a class="reference external" href="https://doi.org/10.5194/essd-6-49-2014">https://doi.org/10.5194/essd-6-49-2014</a></p>
+</div>
+<div class="section" id="acknowledgement">
+<h2>Acknowledgement<a class="headerlink" href="#acknowledgement" title="Permalink to this headline">¶</a></h2>
+<p>No statement provided.</p>
+</div>
+<div class="section" id="author-note">
+<h2>Author note<a class="headerlink" href="#author-note" title="Permalink to this headline">¶</a></h2>
+<p>According to the <a class="reference external" href="https://www.dwd.de/EN/ourservices/gpcc/editorial/userterms_gpcc.html?nn=495490&amp;lsbId=353848">GPCC product acccess page</a>,
+users of the data sets are kindly requested to give feedback and to refer to the GPCC publications
+listed in the references section above.</p>
+</div>
+<div class="section" id="assistance">
+<h2>Assistance<a class="headerlink" href="#assistance" title="Permalink to this headline">¶</a></h2>
+<p>For assistance with GPCC data on NCI, open a new issue at <a class="reference external" href="https://github.com/aus-ref-clim-data-nci/GPCC/issues">https://github.com/aus-ref-clim-data-nci/GPCC/issues</a></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ghcn.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">GHCN</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="gpcp.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">GPCP</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By The Jupyter Book community<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
