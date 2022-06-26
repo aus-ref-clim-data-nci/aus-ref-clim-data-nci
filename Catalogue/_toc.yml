@@ -1,0 +1,12 @@
+format: jb-book
+root: intro
+parts:
+  - caption: The reference collection 
+    chapters:
+    - file: agcd.md
+    - file: cmap.md
+    - file: cmip6_etccdi.md
+    - file: cmorph.md
+    - file: frogs.md
+    - file: gpcc.md
+    - file: gpcp.md
