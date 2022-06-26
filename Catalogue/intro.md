@@ -1,34 +1,49 @@
-# Overview
+# Australian Community Reference Climate Data Collection @ NCI  
 
-This Jupyter Book is a compilation of resources and best practices for climate scientists in Australia who work with big/challenging datasets. This book is intended for both dataset creators and dataset users. While the focus is on Australian climate scientists, many of the resources listed here are generally applicable.
+## What is it? 
 
-:::{note}
-This Jupyter Book is currently under development, so expect frequent updates.
-:::
+A collaboration between the Australian Climate Service (ACS),
+ARC Centre of Excellence for Climate Extremes (CLEX)
+and the wider Australian climate research community
+to re-establish and maintain a reference dataset collection at NCI. 
 
-This Jupyter Book was created as part of a working group formed at the Australian Meteorological and Oceanographic Society's Annual Conference 2021. Please see the goals below and governance (to be added soon) for more information about the working group.
+## Background 
 
-This is meant to be a collaborative resource, and we welcome contributions! Instructions on how to contribute can be found in the book's [github repository](https://github.com/ACDguide/BigData).
+Observational and reanalysis datasets are important to many areas of weather, climate and ocean research.
+There is significant overlap between the datasets required by researchers at the Bureau of Meteorology
+CSIRO and Australian universities, so there have been efforts over the years
+to establish and maintain a shared reference dataset collection at NCI.
+Some high profile datasets are actively managed as stand alone projects
+(e.g. ERA5 in project rt52, AGCD in zv2, BARRA in ma05/cj37),
+but the most recent effort to maintain a broader reference dataset collection
+(project rr7, which was coordinated by NCI) has been inactivate for the past few years.
+During that period, the Computational Modelling Support (CMS) team at CLEX
+(led in this space by Paola Petrelli) have been maintaining a number of reference datasets
+for their own researchers and other ad hoc efforts have been happening here and there.
+With the establishment of the ACS, there is a need (and opportunity) to re-establish
+a shared reference dataset collection.
+By setting up a formal collaboration between the ACS and CLEX we can leverage
+the existing code/expertise at CLEX and the dedicated ACS shared storage space at NCI
+to deliver such a collection. 
 
+## Who's involved? 
 
-# Working Group Goals
+- Damien Irving, Chloe Mackallah and Claire Trenham from ACS 
+- Paola Petrelli from CLEX 
+- Other ACS/CLEX staff and community members as required 
 
-## Ultimate Goal:
-**Create a best practices framework for climate-related scientists in Australia working with big/challenging datasets.**
+## Which datasets?
 
-## Definition of big/challenging datasets: 
-“Big/challenging/very large data”: when the size and complexity of the dataset is such that “traditional data-processing application software” is inadequate to handle the analysis or management of the dataset ([Wikipedia page for “Big data”](https://en.wikipedia.org/wiki/Big_data); [Pangeo FAQ](https://pangeo.io/faq.html))
+We've put together a [short survey](https://forms.gle/4BiXS3wtEPAwCgA6A)
+to collect information from the Australian climate research community about the datasets
+(and variables and timescales within those datasets)
+people would like to see included in the collection.
+We won't be able to support every dataset,
+but we'll do our best to support those that are widely requested.
 
-## Steps to achieve our goal:
-- Consolidate a list of software, tools, learning/training modules, relevant documentation, and other resources that currently exist for dealing with, specifically for storing, accessing, and analyzing, big data.
-- Identify weak points/missing gaps in existing resources
-- Expand documentation, create learning modules, etc. to fill the identified gaps in currently available resources
-- Communicate with other working groups (e.g. on data management guidelines) on issues related to improving data organization
+## Access
 
+The collection will be hosted in [project ia39](https://my.nci.org.au/mancini/project/ia39) on NCI.
+When the collection goes live (date TBC),
+access will be open to anyone in the Australian climate research community.
 
-### Topics to include in the above steps:
-- Methods of data storage (e.g. compression techniques)
-- Methods of accessing data and metadata quickly (e.g. `intake` example from Scott)
-- Interpreting data format, variables, metadata (e.g. grids, chunking)
-- Carrying out computations on large datasets (e.g. using `xarray` and `dask`)
-- Identifying which languages/tools are best suited to specific tasks

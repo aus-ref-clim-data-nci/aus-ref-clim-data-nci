@@ -8,5 +8,6 @@ parts:
     - file: cmip6_etccdi.md
     - file: cmorph.md
     - file: frogs.md
+    - file: ghcn.md
     - file: gpcc.md
     - file: gpcp.md
