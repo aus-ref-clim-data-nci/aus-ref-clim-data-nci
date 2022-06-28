@@ -7,7 +7,7 @@ is a collection of daily precipitation products on a common 1×1 deg grid.
 The collection includes satellite, ground-based and reanalysis products.
 Most of the satellite products were calibrated using rain gauges data,
 for these, where available, the non adjusted version is also provided.
-The temporal range included starts from 1901 to 2019 depedning on the data product.
+The temporal range included starts from 1901 to 2019 depending on the data product.
 Where it is possible the database will be extended in future updates of FROGs.
 The data products spatial coverage is also dependent on the original sources.
 
@@ -16,14 +16,15 @@ and in particular to their news page for updates.
 
 ## Data download
 
-TODO: Explain exactly where/how the data was downloaded from.
+The data is downloaded from the [IPSL ftp site](https://ftp.climserv.ipsl.polytechnique.fr/FROGs/1DD_V1/), using the frogs.py python code available in this repository.
+Updates of the original data are sporadic, we check if any update is available with monthly frequency. Tha automated updates are managed via the [Jenkins accessdev server](https://accessdev.nci.org.au/jenkins/job/aus-ref-clim-data-nci/job/FROGs/).
 
 ## Data location
 
 We've downloaded FROGS data to:
 
 ```
-/g/data/ia39/aus-ref-clim-data-nci/frogs/replica/data/1DD_V1/<dataset>/<files>
+/g/data/ia39/aus-ref-clim-data-nci/frogs/data/1DD_V1/<dataset>/<files>
 ```
 
 Each `<dataset>` is listed below depending on the source data type and spatial coverage.
@@ -89,7 +90,7 @@ Unknown.
 
 ## Data citation
 
-Roca, R., Alexander, L. V., Potter, G., Bador, M., Jucá, R., Contractor, S., Bosilovich, M. G., and Cloché, S.: FROGs: a daily 1×1 gridded precipitation database of rain gauge, satellite and reanalysis products, https://doi.org/10.14768/06337394-73A9-407C-9997-0E380DAC5598, 2019, accesed on <date>
+Roca, R., Alexander, L. V., Potter, G., Bador, M., Jucá, R., Contractor, S., Bosilovich, M. G., and Cloché, S.: FROGs: a daily 1×1 gridded precipitation database of rain gauge, satellite and reanalysis products, https://doi.org/10.14768/06337394-73A9-407C-9997-0E380DAC5598, 2019, accesed on %date%.
 
 As this is an ongoing collection more data is added without chnages to the doi, so please specify date of access in your citation.
 

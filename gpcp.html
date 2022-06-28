@@ -372,7 +372,12 @@ These documents are also available on the filesystem in the dataset folder.</p>
 <div class="section" id="data-download">
 <h2>Data download<a class="headerlink" href="#data-download" title="Permalink to this headline">¶</a></h2>
 <p>We downloaded v1.3 daily and v2-3 monthly from the
-<a class="reference external" href="https://www.ncei.noaa.gov/data/global-precipitation-climatology-project-gpcp-daily/access/">NCEI server</a>,</p>
+<a class="reference external" href="https://www.ncei.noaa.gov/data/global-precipitation-climatology-project-gpcp-daily/access/">NCEI server</a>, using a python based code.
+The code uses the requests module to download the files, to run it:
+python <a class="reference external" href="http://gpcp.py">gpcp.py</a> -y <year> -t <frequency>
+To see all the options:
+python <a class="reference external" href="http://gpcp.py">gpcp.py</a> –help
+Weekly updates are managed via the <a class="reference external" href="https://accessdev.nci.org.au/jenkins/job/aus-ref-clim-data-nci/job/GPCC/">Jenkins accessdev server</a>.</p>
 </div>
 <div class="section" id="data-location">
 <h2>Data location<a class="headerlink" href="#data-location" title="Permalink to this headline">¶</a></h2>

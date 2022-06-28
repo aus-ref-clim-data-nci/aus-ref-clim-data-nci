@@ -364,18 +364,18 @@ For more information on methods and data quality assurance can be found <a class
 <h2>Data download<a class="headerlink" href="#data-download" title="Permalink to this headline">¶</a></h2>
 <p>The data is downloaded from the NCDC NOAA ftp server:<br />
 <span class="xref myst">ftp://ftp.ncdc.noaa.gov/pub/data/ghcn</span></p>
-<p>The files are updated daily on the server. We update them once a week.</p>
-<p>The script uses wget, to run: <code class="docutils literal notranslate"><span class="pre">./ghcn_download.sh</span></code></p>
+<p>The files are updated daily on the server. We update them once a week, the automated updates are managed via the <a class="reference external" href="https://accessdev.nci.org.au/jenkins/job/aus-ref-clim-data-nci/job/GHCN/">Jenkins accessdev server</a>.</p>
+<p>The script uses wget, to run: <code class="docutils literal notranslate"><span class="pre">./ghcn.sh</span></code></p>
 <p>A record of the updates is kept in <code class="docutils literal notranslate"><span class="pre">update_log.txt</span></code>.</p>
 </div>
 <div class="section" id="data-location">
 <h2>Data location<a class="headerlink" href="#data-location" title="Permalink to this headline">¶</a></h2>
 <p>We’ve downloaded GHCN data to:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">g</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">ia39</span><span class="o">/</span><span class="n">aus</span><span class="o">-</span><span class="n">ref</span><span class="o">-</span><span class="n">clim</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">nci</span><span class="o">/</span><span class="n">ghcn</span><span class="o">/</span><span class="n">replica</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">daily</span><span class="o">/</span><span class="n">by_year</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">g</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">ia39</span><span class="o">/</span><span class="n">aus</span><span class="o">-</span><span class="n">ref</span><span class="o">-</span><span class="n">clim</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">nci</span><span class="o">/</span><span class="n">ghcn</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">daily</span><span class="o">/</span><span class="n">by_year</span>
 </pre></div>
 </div>
 <p>The files are ascii format: <code class="docutils literal notranslate"><span class="pre">YYYY.csv</span></code></p>
-<p>The files format is described in <code class="docutils literal notranslate"><span class="pre">/g/data/ia39/aus-ref-clim-data-nci/ghcn/replica/code/ghcn-daily-by_year-format.txt</span></code></p>
+<p>The files format is described in <code class="docutils literal notranslate"><span class="pre">/g/data/ia39/aus-ref-clim-data-nci/ghcn/code/ghcn-daily-by_year-format.txt</span></code></p>
 </div>
 <div class="section" id="license">
 <h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
