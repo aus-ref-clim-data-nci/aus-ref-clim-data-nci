@@ -3,7 +3,6 @@ root: intro
 parts:
   - caption: The reference collection 
     chapters:
-    - file: agcd.md
     - file: cmap.md
     - file: cmip6_etccdi.md
     - file: cmorph.md
