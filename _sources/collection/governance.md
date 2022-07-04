@@ -4,16 +4,21 @@ NCI data reference agreement/ governance
 
 ## Scope of the collection
 The scope of this collection is to host replicas of climate datasets which are of interest to the ACS project/community.
-An initial list is provided “here”. The dataset list was initially compiled by a group of data managers based on current dataset usage by the climate community and expected needs of the ACS project. We sought the ACS and wider community input via a survey. We reviewed the initial list based on the survey results. 
-This initial list might change in the future based on users requests and changes to projects. To make both the management of the dataset and the storage viable we will use the following criteria to determine which datasets to add/remove from the collection.
-The primary criteria is that a dataset should be useful to the ACS project, as this is the storage that provides the storage. However, to avoid unnecessary duplication of data on the NCI servers and to facilitate user experience, exception to this rules are allowed where
-Other partners required a different version or extra variables from datasets already hosted in this collection
-Where datasets are grouped in sub-collections e.g. if most precipitation datasets are already part of this collection then it is reasonable to add new ones here.
-Dataset which are likely to be of use to the ACS researchers in the future if not immediately, provided storage and FTE effort to manage it are reasonable
-In case of doubt the committee will be consulted and decide on a new dataset suitability
+An initial list of datasets is provided [here](list.md). The dataset list was initially compiled by a group of data managers based on current dataset usage by the climate community and expected needs of the ACS project. We sought the ACS and wider community input via a [survey](https://forms.gle/4BiXS3wtEPAwCgA6A) and reviewed the initial list based on the survey results. 
+This initial list might change in the future based on users requests and changes to projects. 
+To make both the management of both datasets and storage viable and transparent we set some criteria to determine which datasets to add/remove from the collection.
+
+### Criteria to accept a new dataset
+The primary criteria is that a dataset should be useful to the ACS project, as this is the project that provides the storage. However, to avoid unnecessary duplication of data on the NCI servers and to facilitate user experience, exception to this rule are allowed where:
+
+ - other partners required a different version or extra variables from datasets already hosted in this collection
+ - datasets are grouped in sub-collections e.g. if most precipitation datasets are already part of this collection then it is reasonable to add new ones here.
+ - dataset which are likely to be of use to the ACS researchers in the future if not immediately, provided storage and FTE effort to manage it are reasonable
+
+In case of doubt the collection managers will be consulted and decide on a new dataset suitability
 Any dataset request that requires a big amount of storage and/or a considerable FTE effort to manage should be evaluated regardless of the origin of the request.
 
-### Contributions
+## Contributions
 This is a community-managed collection, we do not expect users to contribute directly but we would like support from their institutions/projects by providing in-kind time from one of their data managers to help maintaining this resource in the longer term.
 
 
