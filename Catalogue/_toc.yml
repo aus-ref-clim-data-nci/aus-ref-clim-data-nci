@@ -3,10 +3,15 @@ root: intro
 parts:
   - caption: The reference collection 
     chapters:
-    - file: cmap.md
-    - file: cmip6_etccdi.md
-    - file: cmorph.md
-    - file: frogs.md
-    - file: ghcn.md
-    - file: gpcc.md
-    - file: gpcp.md
+    - file: collection/governance
+  - caption: Datasets 
+    chapters:
+    - file: datasets/datasets-intro
+      sections:
+      - file: datasets/cmap
+      - file: datasets/cmip6_etccdi
+      - file: datasets/cmorph
+      - file: datasets/frogs
+      - file: datasets/ghcn
+      - file: datasets/gpcc
+      - file: datasets/gpcp
