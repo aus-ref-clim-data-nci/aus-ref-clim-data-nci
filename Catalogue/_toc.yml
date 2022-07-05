@@ -4,6 +4,7 @@ parts:
   - caption: The reference collection 
     chapters:
     - file: collection/governance
+    - file: collection/howto
     - file: collection/list
   - caption: Datasets 
     chapters:
