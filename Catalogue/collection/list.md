@@ -9,31 +9,31 @@
   - Managed by
   - Status
 * - [Berkeley Earth](http://berkeleyearth.org/data/)
-  - Surface (land) temperature
+  - surface temperature
   -
   -
   -
-* - [C20C+ Detection and Attribution Project](https://portal.nersc.gov/c20c/)
+* - [C20C+](https://portal.nersc.gov/c20c/)
   - Large ensemble
   -
   - 
   - Currently in ua8
-* - [CESM Large Ensemble Community Project](https://www.cesm.ucar.edu/projects/community-projects/LENS/)
+* - [CESM Large Ensemble Project](https://www.cesm.ucar.edu/projects/community-projects/LENS/)
   - Large ensemble
   -
   -
   -
-* - [Clouds and the Earth’s Radiant Energy System (CERES)](https://ceres.larc.nasa.gov/data/)
+* - [CERES](https://ceres.larc.nasa.gov/data/)
   - Clouds
   -
   -
   -
-* - [Climate Forecast System Reanalysis (CFSR)](https://cfs.ncep.noaa.gov/cfsr/)
+* - [CFSR](https://cfs.ncep.noaa.gov/cfsr/)
   - reanalysis
   -
   -
   -
-* - [CPC Merged Analysis of Precipitation (CMAP)](https://www.cpc.ncep.noaa.gov/products/global_precip/html/wpage.cmap.html)
+* - [CMAP](https://www.cpc.ncep.noaa.gov/products/global_precip/html/wpage.cmap.html)
   - precipitation
   - 0
   - Paola Petrelli
@@ -53,48 +53,48 @@
   - 0
   - Paola Petrelli
   - Avaliable
-* - CRUTEM
+* - [CRUTEM](https://crudata.uea.ac.uk/cru/data//temperature/)
+  - surface temperature
   -
   -
   -
-  -
-* - FROGs  
+* - [FROGs](https://frogs.prod.lamp.cnrs.fr/)  
   - precipitation
   - 0
   - Paola Petrelli
   - Avaliable
-* - GHCN  
+* - [GHCN](https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily)  
   - precipitation
   - 0
   - Paola Petrelli
   - Avaliable
-* - GISS
+* - [GISTEMP](https://data.giss.nasa.gov/gistemp/)
+  - surface temperature
   -
   -
   -
-  -
-* - GLEAM
-  -
+* - [GLEAM](https://www.gleam.eu/)
+  - land evaporation
   -
   - Paola Petrelli
   - Last 2 versions currently in ua8
-* - GPCC
+* - [GPCC](https://www.dwd.de/EN/ourservices/gpcc/gpcc.html)
   - precipitation
   -
   - Paola Petrelli
   - Available
-* - GPCP
+* - [GPCP](https://www.ncei.noaa.gov/products/climate-data-records/precipitation-gpcp-daily)
   - precipitation
   -
   - Paola Petrelli
   - Available
-* - GPM-IMERG
+* - [GPM-IMERG](http://climate-cms.wikis.unsw.edu.au/GPM-IMERG)
   - precipitation (satellite)
   -
   - Paola Petrelli
   - Currently in ua8
 * - GSDR
-  -
+  - precipitation
   -
   -
   -
