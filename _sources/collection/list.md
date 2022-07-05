@@ -8,8 +8,8 @@
   - Priority
   - Managed by
   - Status
-* - Berkeley Earth
-  -
+* - [Berkeley Earth](http://berkeleyearth.org/data/)
+  - Surface (land) temperature
   -
   -
   -
@@ -28,12 +28,12 @@
   -
   -
   -
-* - CFSR
+* - [Climate Forecast System Reanalysis (CFSR)](https://cfs.ncep.noaa.gov/cfsr/)
   - reanalysis
   -
   -
   -
-* - CMAP
+* - [CPC Merged Analysis of Precipitation (CMAP)](https://www.cpc.ncep.noaa.gov/products/global_precip/html/wpage.cmap.html)
   - precipitation
   - 0
   - Paola Petrelli
