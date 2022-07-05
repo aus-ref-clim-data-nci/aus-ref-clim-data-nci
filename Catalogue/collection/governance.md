@@ -16,14 +16,14 @@ The primary criteria is that a dataset should be useful to the ACS project, as t
 In case of doubt the collection managers will be consulted and decide on a new dataset suitability
 Any dataset request that requires a big amount of storage and/or a considerable FTE effort to manage should be evaluated regardless of the origin of the request.
 
-## Contributions
+### Contributions
 This is a community-managed collection, we do not expect users to contribute directly but we would like support from their institutions/projects by providing in-kind time from one of their data managers to help maintaining this resource in the longer term.
 
 
-## Open access
+### Open access
 Anyone who has access to NCI can request access to the data, provided they agree with any terms of use.
 
-## Handling of licensing
+### Handling of licensing
 For specific licensing terms, which will be different for each dataset, the onus is on the user to respect the terms of use and register for any dataset that requires to do so. We will endeavour to make the license available both in the metadata records and in the dataset folders and repository, so it is visible whichever way the dataset is discovered. We cannot however enforce the licenses and adherence to terms and conditions.
 We can only share datasets whose license allows us to do so. In any other case we will seek an agreement to be able to redistribute the data locally.
 

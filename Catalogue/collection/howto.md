@@ -5,7 +5,8 @@
 Only associates of ACS or of partner organisations can put in requests for more dataset to be downloaded. Each person receiving the request will:
  - assess overall usefulness of the dataset, size and complexity of management
  - if the usefulness is obvious and size and management complexity low then a dataset can be added without a formal consultation with the committee . However it would be best even in this case to at least talk to someone else about the intention of adding the data.
- - if the dataset is either complex to manage, requires a lot of storage and/or its general usefulness to the wider community is not apparent, then the requestor needs to submit a formal request indicating why this is an important dataset. This can be then annotated by someone part of the project and sent to the committee for discussion. 
+ - if the dataset is either complex to manage, requires a lot of storage and/or its general usefulness to the wider community is not apparent, then the requestor needs to submit a formal request indicating why this is an important dataset. This can be then annotated by someone part of the project and sent to the committee for discussion.<br> 
+
 Please note that there is no obligation on this project to satisfy any data request but the ones agreed by the ACS. This process is more to assure transparency and opportunities to keep the collection relevant to the wider community, there is no obligation to accept any dataset even when it might satisfy all 3 criterias, as managing even a small dataset still require work and we have a limited number of collection managers.
 Where only lack of manpower is the main reason for refusal, an agreement where the interested party offer to help towards the maintenance should be sought. 
 
