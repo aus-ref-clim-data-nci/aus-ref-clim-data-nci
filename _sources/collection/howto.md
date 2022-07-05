@@ -1,24 +1,43 @@
-# How to
+# How to...
+
+## Get access to the collection
+
+Anyone working/studying in the Australian climate science community
+with an [NCI account](https://nci.org.au/users/how-access-nci)
+can access the collection by requesting access to project ia39
+[here](https://my.nci.org.au/mancini/project/ia39).
+
+## Find data
+
+The collection can be found on NCI systems at `/g/data/ia39/aus-ref-clim-data-nci/`.
+You can search the subdictories manually to find what you need
+or make use of our [intake-esm catalogue](https://github.com/aus-ref-clim-data-nci/acs-replica-intake).
+
+A complete dataset listing is also available in the sidebar of this book
+and there's a repository corresponding to each dataset
+(where you can find information and ask questions)
+in our [GitHub Organisation](https://github.com/aus-ref-clim-data-nci/acs-replica-intake).
 
 ## Request a new dataset
 
-Only associates of ACS or of partner organisations can put in requests for more dataset to be downloaded.
-Each person receiving the request will:
- - assess overall usefulness of the dataset, size and complexity of management
- - if the usefulness is obvious and the size and management complexity is low
-   then a dataset can be added without a formal consultation with the committee.
-   However, it would be best even in this case to at least talk to someone else about the intention of adding the data.
- - if the dataset is either complex to manage,
-   requires a lot of storage and/or its general usefulness to the wider community is not apparent,
-   then the requestor needs to submit a formal request indicating why this is an important dataset.
-   This can be then annotated by someone part of the project and sent to the committee for discussion.<br> 
+Associates of the Australian Climate Service (ACS) or of partner organisations can request
+that a dataset be added to the collection by creating a new issue
+[here](https://github.com/aus-ref-clim-data-nci/aus-ref-clim-data-nci/issues).
 
-Please note that there is no obligation on this project to satisfy any data request but the ones agreed by the ACS.
-This process is more to assure transparency and opportunities to keep the collection relevant to the wider community,
-there is no obligation to accept any dataset even when it might satisfy all three criteria,
-as managing even a small dataset still require work and we have a limited number of collection managers.
-Where only lack of manpower is the main reason for refusal,
-an agreement where the interested party offer to help towards the maintenance should be sought. 
+## Assess a new request
+
+The size, management complexity and number of potential users of a dataset will be considered when assessing a new request.
+If the number of potential users is high and the size and management complexity is low,
+a dataset can typically be added without a formal committee meeting.
+If the dataset is complex to manage,
+requires a lot of storage and/or is only of use to a small number of people in the community,
+the committee will meet to consider the request.
+A requestor may be asked for additional information in support of their request,
+and in some cases may be asked to help with the ongoing maintenance of the dataset.
+
+Please note that this project is not obliged to satisfy any data request.
+We'll do our best to meet the needs of the community and to assess requests in an open and transparent manner,
+but will sometimes be limited due to storage, staff time or ACS project constraints.
 
 ## Add a new dataset
 
@@ -29,17 +48,17 @@ For each new dataset create:
    - the repository should be then cloned in the `code` subfolder.
 
 Each repository will contain wherever possible and relevant:
- - download code file/s which should include a license and sufficient comments to make sure the scope and use of the code is clear
+ - download code file/s with sufficient comments to make sure the scope and use of the code is clear
  - a markdown `README.md` file with the following subsections:
-   - Overview: Summary of the dataset
-   - Data download: How (and where from) was the data downloaded? 
-   - Data location: Where was the data downloaded to?
-   - License: Details of the license associated with the dataset.
-   - Data citation: Is there a DOI for the dataset?
-   - References: Are there any academic papers describing the dataset?
-   - Acknowledgement: Any acknowledgement statement the dataset authors request that people include in their papers.
-   - Author note: Any other notes from the dataset authors. 
-   - Assistance: A link to the issues page of the repo so where people can ask for assistance.
+   - overview: Summary of the dataset
+   - data download: How (and where from) was the data downloaded? 
+   - data location: Where was the data downloaded to?
+   - license: Details of the license associated with the dataset.
+   - data citation: Is there a DOI for the dataset?
+   - references: Are there any academic papers describing the dataset?
+   - acknowledgement: Any acknowledgement statement the dataset authors request that people include in their papers.
+   - author note: Any other notes from the dataset authors. 
+   - assistance: A link to the issues page of the repo so where people can ask for assistance.
  - license for the code as a separate file
  - log file `updates_log.txt` with details of first download and subsequent updates to the files where suitable
 
@@ -47,9 +66,9 @@ If using an existing publically available code there is no need to replicate it
 but clear references to the original source (i.e. github repository)
 and how it is used should still be detailed in the README file. 
 
-## Dataset updates
+## Update a dataset
 
-Frequency of dataset updates depends on the specific dataset.
+The frequency of dataset updates depends on the specific dataset.
 We will try wherever possible to follow the original dataset schedule.
 Where regular updates are necessary we will use the
 [accesdev Jenkins server](https://accessdev.nci.org.au/jenkins/job/aus-ref-clim-data-nci) to manage scheduling.
@@ -61,7 +80,7 @@ To just view the scheduled tasks is not necessary to login.
 Updates will be also documented and shared in the `update_log.txt` file
 available in each repository and locally in the `<dataset>/code` folder. 
 
-## Dataset retirement
+## Retire a dataset
 
 We are still in the process of developing a retirement policy.
 This will eventually be based on the [recommendations](https://acdguide.github.io/Governance/retire/retire-intro.html)
