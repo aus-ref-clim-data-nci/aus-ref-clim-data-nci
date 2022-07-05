@@ -1,0 +1,19 @@
+format: jb-book
+root: intro
+parts:
+  - caption: The reference collection 
+    chapters:
+    - file: collection/governance
+    - file: collection/howto
+  - caption: Datasets 
+    chapters:
+    - file: datasets/datasets-intro
+      sections:
+      - file: datasets/cmap
+      - file: datasets/cmip6_etccdi
+      - file: datasets/cmorph
+      - file: datasets/frogs
+      - file: datasets/ghcn
+      - file: datasets/gpcc
+      - file: datasets/gpcp
+    - file: datasets/list
