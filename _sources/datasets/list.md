@@ -1,4 +1,11 @@
-# Dataset prioriets list
+# Priority listing
+
+The following is a working list of datasets that might be added
+to the collection in the future.
+
+If you have any questions about the working list or would like to suggest additions,
+feel free to submit an issue
+[here](https://github.com/aus-ref-clim-data-nci/aus-ref-clim-data-nci/issues).
 
 ```{list-table}
 :header-rows: 1
