@@ -5,7 +5,6 @@ parts:
     chapters:
     - file: collection/governance
     - file: collection/howto
-    - file: collection/list
   - caption: Datasets 
     chapters:
     - file: datasets/datasets-intro
@@ -17,3 +16,4 @@ parts:
       - file: datasets/ghcn
       - file: datasets/gpcc
       - file: datasets/gpcp
+    - file: datasets/list
