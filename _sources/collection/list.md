@@ -29,7 +29,7 @@
   -
   -
 * - [CFSR](https://cfs.ncep.noaa.gov/cfsr/)
-  - reanalysis
+  - coupled reanalysis
   -
   -
   -
@@ -39,7 +39,7 @@
   - Paola Petrelli
   - Avaliable
 * - CMEMS_reanalysis
-  - reanalysis
+  - ocean reanalysis
   -
   - Paola Petrelli
   - Some currently in ua8
@@ -98,13 +98,13 @@
   -
   -
   -
-* - GSMaP
+* - [GSMaP](http://climate-cms.wikis.unsw.edu.au/GSMaP)
   - precipitation
   -
   - Paola Petrelli
   - Currently in ua8
-* - GSWP 
-  -
+* - [GSWP](http://cola.gmu.edu/gswp/) 
+  - soil wetness
   -
   -
   -
@@ -113,23 +113,23 @@
   -
   -
   -
-* - HadCRU 
+* - [HadCRUT](https://crudata.uea.ac.uk/cru/data/temperature/) 
+  - global temperature
   -
   -
   -
-  -
-* - HadGHCND
-  -
-  -
-  -
-  -
-* - HadISST 
+* - [HadGHCND](https://www.metoffice.gov.uk/hadobs/hadghcnd/)
+  - surface temperature
   -
   -
   -
+* - [HadISST](https://www.metoffice.gov.uk/hadobs/hadisst/) 
+  - sea surface temperature
   -
-* - JRA55 
-  - reanalysis
+  -
+  -
+* - [JRA-55](https://jra.kishou.go.jp/JRA-55/index_en.html) 
+  - atmospheric reanalysis
   -
   -
   -
@@ -158,8 +158,8 @@
   -
   -
   -
-* - SODA
-  -
+* - [SODA](https://www.soda.umd.edu/)
+  - ocean reanalysis
   -
   - Paola Petrelli
   - Some versions in ua8
