@@ -13,18 +13,18 @@
   -
   -
   -
-* - C20C+
+* - [C20C+ Detection and Attribution Project](https://portal.nersc.gov/c20c/)
+  - Large ensemble
   -
-  -
-  -
+  - 
   - Currently in ua8
-* - CCSM
+* - [CESM Large Ensemble Community Project](https://www.cesm.ucar.edu/projects/community-projects/LENS/)
+  - Large ensemble
   -
   -
   -
-  -
-* - CERES
-  -
+* - [Clouds and the Earth’s Radiant Energy System (CERES)](https://ceres.larc.nasa.gov/data/)
+  - Clouds
   -
   -
   -
