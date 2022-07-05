@@ -1,13 +1,13 @@
-## Australian Community Reference Climate Data Collection @ NCI  
+# Australian Community Reference Climate Data Collection @ NCI  
 
-### What is it? 
+## What is it? 
 
 A collaboration between the Australian Climate Service (ACS),
 ARC Centre of Excellence for Climate Extremes (CLEX)
 and the wider Australian climate research community
 to re-establish and maintain a reference dataset collection at NCI. 
 
-### Background 
+## Background 
 
 Observational and reanalysis datasets are important to many areas of weather, climate and ocean research.
 There is significant overlap between the datasets required by researchers at the Bureau of Meteorology
@@ -26,7 +26,7 @@ By setting up a formal collaboration between the ACS and CLEX we can leverage
 the existing code/expertise at CLEX and the dedicated ACS shared storage space at NCI
 to deliver such a collection. 
 
-### Who's involved? 
+## Who's involved? 
 
 - Damien Irving, Chloe Mackallah and Claire Trenham from ACS 
 - Paola Petrelli from CLEX 
