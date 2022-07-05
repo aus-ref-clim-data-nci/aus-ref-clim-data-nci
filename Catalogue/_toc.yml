@@ -10,7 +10,7 @@ parts:
     - file: datasets/datasets-intro
       sections:
       - file: datasets/cmap
-      - file: datasets/cmip6_etccdi
+      - file: datasets/cmip6-etccdi
       - file: datasets/cmorph
       - file: datasets/frogs
       - file: datasets/ghcn
