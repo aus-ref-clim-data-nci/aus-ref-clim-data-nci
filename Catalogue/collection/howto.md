@@ -47,6 +47,16 @@ For each new dataset create:
    - a new repository in the [aus-ref-clim-data-nci github organisation](https://github.com/aus-ref-clim-data-nci).
    - the repository should be then cloned in the `code` subfolder.
 
+````{admonition} **Permissions**
+The `dataset` directory should be owned by the data custodian.
+The `data` folder is owned by `ia39` for accounting reasons, and acls are used to give `ia39_w` writing access:
+```{code}
+setfacl -R -m g:ia39_w:rwx code/
+```
+The `code` folder is owned by `ia39_w` with `rwx` permissions for the group, other can read but not write or execute.
+For help with posix and acsl permissions see [ACDG Governance guide](https://acdguide.github.io/Governance/tech/permissions.html#acls-cheat-sheet).
+````
+
 Each repository will contain wherever possible and relevant:
  - download code file/s with sufficient comments to make sure the scope and use of the code is clear
  - a markdown `README.md` file with the following subsections:
