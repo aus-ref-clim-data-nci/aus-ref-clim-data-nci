@@ -100,7 +100,7 @@ feel free to submit an issue
   - precipitation (satellite)
   - 1
   - Paola Petrelli
-  - Currently in ua8
+  - Available
 * - GSDR
   - precipitation
   - 1
@@ -129,8 +129,8 @@ feel free to submit an issue
 * - [HadISST](https://www.metoffice.gov.uk/hadobs/hadisst/) 
   - sea surface temperature
   - 1
-  -
-  -
+  - Paola Petrelli
+  - Currently available in ua8
 * - [JRA-55](https://jra.kishou.go.jp/JRA-55/index_en.html) 
   - atmospheric reanalysis
   - 2
@@ -149,8 +149,8 @@ feel free to submit an issue
 * - [OISST](https://www.ncei.noaa.gov/products/optimum-interpolation-sst)
   - sea surface temperature
   - 1
-  - Paola Petrelli
-  - Currently available in ua8
+  - Sam Green
+  - Available
 * - PEODAS
   -
   -

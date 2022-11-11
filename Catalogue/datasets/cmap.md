@@ -19,7 +19,7 @@ For this reason the PSL data is updated irregularly, following updates at CPC.
 
 The download script uses wget. It can be run as follows,
 ```
-$ ./cmap_download.sh <file> <subset>
+$ ./cmap.sh <file> <subset>
 ```
 where  <subset> is `enh` for enhanced and `std` for standard.
 
