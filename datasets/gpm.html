@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CMAP &#8212; Australian Community Reference Climate Data Collection @ NCI</title>
+    <title>GPM IMERG &#8212; Australian Community Reference Climate Data Collection @ NCI</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -51,8 +51,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="CMIP6_ETCCDI" href="cmip6-etccdi.html" />
-    <link rel="prev" title="Currently available" href="datasets-intro.html" />
+    <link rel="next" title="OISST" href="oisst.html" />
+    <link rel="prev" title="GPCP" href="gpcp.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -129,8 +129,8 @@
    </i>
   </label>
   <ul class="current">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="cmap.html">
      CMAP
     </a>
    </li>
@@ -164,8 +164,8 @@
      GPCP
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="gpm.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      GPM IMERG
     </a>
    </li>
@@ -222,7 +222,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/datasets/cmap.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/datasets/gpm.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -242,7 +242,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/aus-ref-clim-data-nci/aus-ref-clim-data-nci/issues/new?title=Issue%20on%20page%20%2Fdatasets/cmap.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/aus-ref-clim-data-nci/aus-ref-clim-data-nci/issues/new?title=Issue%20on%20page%20%2Fdatasets/gpm.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -323,7 +323,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>CMAP</h1>
+                <h1>GPM IMERG</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -387,89 +387,86 @@
             
               <div>
                 
-  <div class="section" id="cmap">
-<h1>CMAP<a class="headerlink" href="#cmap" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="gpm-imerg">
+<h1>GPM IMERG<a class="headerlink" href="#gpm-imerg" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
-<p>The CPC Merged Analysis of Precipitation (CMAP) includes monthly and pentad global gridded precipitation means.
-It has a standard version and one enhanced with NCEP Reanalysis.
-CMAP covers from 1979 to near the present on a global grid at 2.5 degree latitude x 2.5 degree longitude resolution.
-For more information you can check the original data source on the
-<a class="reference external" href="https://psl.noaa.gov/data/gridded/data.cmap.html">NOAA Physical Sceince Laboratory (PSL) website</a>
-and the <a class="reference external" href="https://climatedataguide.ucar.edu/climate-data/cmap-cpc-merged-analysis-precipitation">UCAR climate data guide</a>
-for a review of the dataset.</p>
+<p>GPM IMERG Final Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V06</p>
+<p>The Integrated Multi-satellitE Retrievals for GPM (IMERG) algorithm combines information from the GPM satellites to estimate global precipitation. IMERG is the continuation of TRMM. The latest version is the minor version 06B which combines the precipitation estimates collected by the TRMM satellite (2000 - 2015) with the estimates from the GPM satellite (2014 - present).
+The monthly Global Precipitation Climatology Project (GPCP) Satellite-Gauge (SG) product over high-latitude ocean and tropical land is used to correct known biases.</p>
+<p>The dataset has a spatial resolution of 0.1°x0.1° (roughly 10x10 km) over the globe and a temporal resolution of 30 minutes. The temporal coverage starts on 2000-06-01 to  present with about 3 months of delay (this is effectively up to 1 year for the netcdf version, see Data download section below).</p>
+<p>The IMERG system is run twice in near-real time:</p>
+<ul class="simple">
+<li><p>“Early” multi-satellite product ~4 hr after observation time using only forward morphing and</p></li>
+<li><p>“Late” multi-satellite product ~14 hr after observation time, using both forward and backward morphing
+and once after the monthly gauge analysis is received:</p></li>
+<li><p>“Final”, satellite-gauge product ~3.5 months after the observation month, using both forward and backward morphing and including monthly gauge analyses.</p></li>
+</ul>
+<p>For this collection only download the “final” product is downloaded.</p>
+<p>More information and a detailed description of the algorithm and data sources used are available on the <a class="reference external" href="https://gpm.nasa.gov/data/imerg">NASA GPM website</a> and on the <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/GPM_3IMERGHH_06/summary">GES DISC website</a>.</p>
 </div>
 <div class="section" id="data-download">
 <h2>Data download<a class="headerlink" href="#data-download" title="Permalink to this headline">¶</a></h2>
-<p>The <a class="reference external" href="https://www.cpc.ncep.noaa.gov/products/global_precip/html/wpage.cmap.html">original data</a>
-is created by NOAA Climate Prediction Center (CPC) and it is in ascii format;
-we download a netcdf version from <a class="reference external" href="https://psl.noaa.gov/data/gridded/data.cmap.html">PSL</a>.
-For this reason the PSL data is updated irregularly, following updates at CPC.</p>
-<p>The download script uses wget. It can be run as follows,</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ./cmap.sh &lt;file&gt; &lt;subset&gt;
+<p>The data is downloaded from the <a class="reference external" href="https://gpm1.gesdisc.eosdis.nasa.gov/opendap/hyrax/GPM_L3/GPM_3IMERGHH.06/contents.html">GESC DISC hyrax server</a> using the opendap protocol to get it in netcdf4 format instead of the original HDF5. This version is updated irregularly, so the delay in data availability is effectively up to a year from present.
+As each original file contains only 1 timestep for ease of use the files are then concatenated in daily files using CDO and rechunked using NCO.
+Updates are run with a monthly frequency via the <a class="reference external" href="https://accessdev.nci.org.au/jenkins/job/aus-ref-clim-data-nci/job/IMERG/">accessdev Jenkins server</a>.</p>
+<p>The code used to download the files is python based, to see all the options:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">python</span> <span class="n">gpm</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">help</span>
 </pre></div>
 </div>
-<p>where  <subset> is <code class="docutils literal notranslate"><span class="pre">enh</span></code> for enhanced and <code class="docutils literal notranslate"><span class="pre">std</span></code> for standard.</p>
+<p>The code used to concatenate the files is a bash script calling CDO</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="o">./</span><span class="n">gpm_concat</span><span class="o">.</span><span class="n">sh</span> <span class="o">&lt;</span><span class="n">yr</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">mn</span><span class="o">&gt;</span> 
+</pre></div>
+</div>
+<p>which runs</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cdo --silent --no_warnings --no_history -L -s -f nc4c -z zip_4 cat 3B-HHR.MS.MRG.3IMERG.${yr}${mn}${day}*.nc tmp.nc
+ncks --cnk_dmn time,48 --cnk_dmn lat,600 --cnk_dmn lon,600 tmp.nc 3B-HHR.MS.MRG.3IMERG.${yr}${mn}${day}.nc 
+</pre></div>
+</div>
+<p>A record of updates is kept in <code class="docutils literal notranslate"><span class="pre">update_log.txt</span></code> for downloads and a separate log <code class="docutils literal notranslate"><span class="pre">concat_log.txt</span></code> for the concatenation step.
+We are only keeping the current year original files. The last modified dates for the original files are recorded in original/mod_date_<year>.txt files.</p>
 </div>
 <div class="section" id="data-location">
 <h2>Data location<a class="headerlink" href="#data-location" title="Permalink to this headline">¶</a></h2>
-<p>We’ve downloaded the CMAP dataset to:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">g</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">ia39</span><span class="o">/</span><span class="n">aus</span><span class="o">-</span><span class="n">ref</span><span class="o">-</span><span class="n">clim</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">nci</span><span class="o">/</span><span class="n">cmap</span><span class="o">/</span><span class="n">data</span> 
+<p>GPM IMERG V06B data in available in</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">g</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">ia39</span><span class="o">/</span><span class="n">aus</span><span class="o">-</span><span class="n">ref</span><span class="o">-</span><span class="n">clim</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">nci</span><span class="o">/</span><span class="n">gpm</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">V06B</span><span class="o">/&lt;</span><span class="n">yr</span><span class="o">&gt;/&lt;</span><span class="n">files</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>There are two sub-folders:</p>
-<p><code class="docutils literal notranslate"><span class="pre">enh</span></code> for enhanced monthly data:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">precip.mon.ltm.nc</span></code>: enhanced long term monthly mean, derived from years 1981 to 2010</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">precip.mon.mean.nc</span></code>: enhanced monthly mean from 1979/01 to 2021/03</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">precip.pentad.mean.nc</span></code>: enhanced pentad mean from 1979/01 to 2016/12/27</p></li>
-</ul>
-<p><code class="docutils literal notranslate"><span class="pre">std</span></code> for standard monthly data:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">precip.mon.ltm.nc</span></code>: standard long term monthly mean, derived from years 1981 to 2010</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">precip.mon.mean.nc</span></code>: standard monthly mean from 1979/01 to 2021/03</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">precip.pentad.mean.nc</span></code>: standard pentad mean from 1979/01 to 2016/12/27</p></li>
-</ul>
-<p>The <code class="docutils literal notranslate"><span class="pre">update_log.txt</span></code> file keeps track of remote and local updates to files.
-The previously downloaded version is kept for reference in the <code class="docutils literal notranslate"><span class="pre">previous_version</span></code> sub-folders.</p>
 </div>
 <div class="section" id="license">
 <h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
-<p>Unknown.</p>
+<p><a class="reference external" href="https://science.nasa.gov/earth-science/earth-science-data/data-information-policy/">NASA Data &amp; Information Policy</a></p>
 </div>
 <div class="section" id="data-citation">
 <h2>Data citation<a class="headerlink" href="#data-citation" title="Permalink to this headline">¶</a></h2>
-<p>Unknown.</p>
+<p>Huffman, G.J., E.F. Stocker, D.T. Bolvin, E.J. Nelkin, Jackson Tan (2019), GPM IMERG Final Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V06, Greenbelt, MD, Goddard Earth Sciences Data and Information Services Center (GES DISC), Accessed: [Data Access Date], 10.5067/GPM/IMERG/3B-HH/06</p>
 </div>
 <div class="section" id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p>Xie P and Arkin PA (1997):
-Global precipitation: A 17-year monthly analysis based on gauge observations, satellite estimates, and numerical model outputs.
-<em>Bulletin of the American Meteorological Society</em>, 78, 2539-2558.
-<a class="reference external" href="https://doi.org/10.1175/1520-0477(1997)078%3C2539:GPAYMA%3E2.0.CO;2">https://doi.org/10.1175/1520-0477(1997)078&lt;2539:GPAYMA&gt;2.0.CO;2</a></p>
-<p>Huffman GJ, Adler RF, Arkin P, Chang A, Ferraro R, Gruber A, Janowiak J, McNab A, Rudolf B, and Schneider U (1997).
-The Global Precipitation Climatology Project (GPCP) combined data set.
-<em>Bulletin of the American Meteorological Society</em>, 78, 5-20.
-<a class="reference external" href="https://doi.org/10.1175/1520-0477(1997)078%3C0005:TGPCPG%3E2.0.CO;2">https://doi.org/10.1175/1520-0477(1997)078&lt;0005:TGPCPG&gt;2.0.CO;2</a></p>
+<p>GLOBAL PRECIPITATION MEASUREMENT PRECIPITATION PROCESSING SYSTEM, File Specification. 2020.  URL: <span class="xref myst">ftp://gpmweb2.pps.eosdis.nasa.gov/pub/GPMfilespec/filespec.GPM.pdf</span></p>
+<p>Jin, Daeho, Oreopoulos, Lazaros, Lee, Dongmin, Tan, Jackson, Cho, Nayeong. 2021.  Cloud-Precipitation Hybrid Regimes and their Projection onto IMERG Precipitation Data. Vol. -1, No. aop, DOI: 10.1175/JAMC-D-20-0253.1  ISSN: 1558-8424, 1558-8432</p>
 </div>
 <div class="section" id="acknowledgement">
 <h2>Acknowledgement<a class="headerlink" href="#acknowledgement" title="Permalink to this headline">¶</a></h2>
-<p>If you acquire CMAP Precipitation data products from PSL,
-we ask that you acknowledge us in your use of the data.
-This may be done by including text such as the following
-in any documents or publications using these data:</p>
-<p>“CMAP Precipitation data provided by the NOAA/OAR/ESRL PSL, Boulder, Colorado, USA,
-from their Web site at <location>”</p>
+<p>No statement provided.</p>
 </div>
 <div class="section" id="author-note">
 <h2>Author note<a class="headerlink" href="#author-note" title="Permalink to this headline">¶</a></h2>
-<p>We would also appreciate receiving a copy of the relevant publications.
-This will help PSL to justify keeping the CMAP Precipitation data set freely available online in the future.
-Thank you!</p>
 </div>
 <div class="section" id="assistance">
 <h2>Assistance<a class="headerlink" href="#assistance" title="Permalink to this headline">¶</a></h2>
-<p>For assistance with CMAP data on NCI, open a new issue at <a class="reference external" href="https://github.com/aus-ref-clim-data-nci/CMAP/issues">https://github.com/aus-ref-clim-data-nci/CMAP/issues</a></p>
+<p>For assistance with GPM IMERG data on NCI, open a new issue at <a class="reference external" href="https://github.com/aus-ref-clim-data-nci/GPM/issues">https://github.com/aus-ref-clim-data-nci/GPM/issues</a></p>
+<p>NB Some of the original attributes contain slightly incorrect information and could generate warning in software that run attributes scan. As an example with cdo</p>
+<p>Warning (cdfScanVarAttr): NetCDF: Variable not found - &gt;Grid_time&lt;
+Warning (cdfScanVarAttr): NetCDF: Variable not found - &gt;Grid_lon&lt;
+Warning (cdfScanVarAttr): NetCDF: Variable not found - &gt;Grid_lat&lt;
+Warning (cdfScanVarAttr): NetCDF: Variable not found - &gt;Grid_latv&lt;
+Warning (cdfScanVarAttr): NetCDF: Variable not found - &gt;Grid_nv&lt;
+Warning (cdfScanVarAttr): NetCDF: Variable not found - &gt;Grid_lonv&lt;
+Warning (cdf_set_var): Inconsistent variable definition for lat_bnds!
+Warning (cdf_set_var): Inconsistent variable definition for lon_bnds!
+Warning (cdf_set_var): Inconsistent variable definition for time_bnds!</p>
+<p>These warnings can be safely ignored!</p>
 </div>
 </div>
 
@@ -498,17 +495,17 @@ Thank you!</p>
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="datasets-intro.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="gpcp.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Currently available</p>
+            <p class="prev-next-title">GPCP</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="cmip6-etccdi.html" title="next page">
+    <a class='right-next' id="next-link" href="oisst.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">CMIP6_ETCCDI</p>
+        <p class="prev-next-title">OISST</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

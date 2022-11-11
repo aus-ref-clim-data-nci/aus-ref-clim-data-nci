@@ -13,7 +13,7 @@ The spatial resolution varies from 0.5° x 0.5° to 2.8125° x 2.8125° dependin
 
 ## Data download
 
-The data is downloaded from the [Copernicus Climate Data Store](), using the [cds_etccdi python module](https://github.com/coecms/cds_etccdi).
+The data is downloaded from the [Copernicus Climate Data Store](https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-extreme-indices-cmip6?tab=overview), using the [cds_etccdi python module](https://github.com/coecms/cds_etccdi).
 This dataset is complete so no updates will be performed in the future unless corrections to the original data will become available.
 
 ## Data location

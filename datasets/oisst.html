@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CMAP &#8212; Australian Community Reference Climate Data Collection @ NCI</title>
+    <title>OISST &#8212; Australian Community Reference Climate Data Collection @ NCI</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -51,8 +51,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="CMIP6_ETCCDI" href="cmip6-etccdi.html" />
-    <link rel="prev" title="Currently available" href="datasets-intro.html" />
+    <link rel="next" title="Priority listing" href="list.html" />
+    <link rel="prev" title="GPM IMERG" href="gpm.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -129,8 +129,8 @@
    </i>
   </label>
   <ul class="current">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="cmap.html">
      CMAP
     </a>
    </li>
@@ -169,8 +169,8 @@
      GPM IMERG
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="oisst.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      OISST
     </a>
    </li>
@@ -222,7 +222,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/datasets/cmap.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/datasets/oisst.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -242,7 +242,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/aus-ref-clim-data-nci/aus-ref-clim-data-nci/issues/new?title=Issue%20on%20page%20%2Fdatasets/cmap.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/aus-ref-clim-data-nci/aus-ref-clim-data-nci/issues/new?title=Issue%20on%20page%20%2Fdatasets/oisst.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -323,7 +323,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>CMAP</h1>
+                <h1>OISST</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -387,89 +387,65 @@
             
               <div>
                 
-  <div class="section" id="cmap">
-<h1>CMAP<a class="headerlink" href="#cmap" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="oisst">
+<h1>OISST<a class="headerlink" href="#oisst" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
-<p>The CPC Merged Analysis of Precipitation (CMAP) includes monthly and pentad global gridded precipitation means.
-It has a standard version and one enhanced with NCEP Reanalysis.
-CMAP covers from 1979 to near the present on a global grid at 2.5 degree latitude x 2.5 degree longitude resolution.
-For more information you can check the original data source on the
-<a class="reference external" href="https://psl.noaa.gov/data/gridded/data.cmap.html">NOAA Physical Sceince Laboratory (PSL) website</a>
-and the <a class="reference external" href="https://climatedataguide.ucar.edu/climate-data/cmap-cpc-merged-analysis-precipitation">UCAR climate data guide</a>
-for a review of the dataset.</p>
+<p>The NOAA 1/4 degree Daily Optimum Interpolation Sea Surface Temperature (OISST) is a long term Climate Data Record that incorporates observations from different platforms (satellites, ships, buoys and Argo floats) into a regular global grid. The dataset is interpolated to fill gaps on the grid and create a spatially complete map of sea surface temperature. Satellite and ship observations are referenced to buoys to compensate for platform differences and sensor biases.</p>
+<p>OISST v2.1 replaced v2 on April 1, 2020. V2 stopped production on April 26, 2020 after its input datasets were discontinued. Data are currently available from September 1, 1981—present, and updated every day. V2.1 has significant quality improvements for data from January 1, 2016 onward.</p>
+<p>Note: For September 1981—December 2015, data for SST and SST anomaly are the same as v2, but have been updated from netCDF3 to netCDF4 with updated metadata in v2.1.</p>
+<p>More information and a detailed description of the algorithm and data sources used are available on the <a class="reference external" href="https://www.ncei.noaa.gov/products/optimum-interpolation-sst">NASA OISST website</a>.</p>
 </div>
 <div class="section" id="data-download">
 <h2>Data download<a class="headerlink" href="#data-download" title="Permalink to this headline">¶</a></h2>
-<p>The <a class="reference external" href="https://www.cpc.ncep.noaa.gov/products/global_precip/html/wpage.cmap.html">original data</a>
-is created by NOAA Climate Prediction Center (CPC) and it is in ascii format;
-we download a netcdf version from <a class="reference external" href="https://psl.noaa.gov/data/gridded/data.cmap.html">PSL</a>.
-For this reason the PSL data is updated irregularly, following updates at CPC.</p>
-<p>The download script uses wget. It can be run as follows,</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ./cmap.sh &lt;file&gt; &lt;subset&gt;
+<p>The data is downloaded from <a class="reference external" href="https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/">ncei.noaa.gov</a> using wget. This data is updated regularly, every ~1-2 days.
+Since the original daily files are relatively small in size (~1.6mb), they are then concatenated in yearly files using CDO and rechunked using NCO.
+Updates are run with a weekly frequency via the <a class="reference external" href="https://accessdev.nci.org.au/jenkins/job/aus-ref-clim-data-nci/job/OISST/">accessdev Jenkins server</a>.</p>
+<p>The code used to download the files is python based, to see all the options:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">python3</span> <span class="n">oisst</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">help</span>
 </pre></div>
 </div>
-<p>where  <subset> is <code class="docutils literal notranslate"><span class="pre">enh</span></code> for enhanced and <code class="docutils literal notranslate"><span class="pre">std</span></code> for standard.</p>
+<p>The code used to concatenate the files is a python script calling CDO and NCO:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">module</span> <span class="n">load</span> <span class="n">cdo</span>
+    <span class="n">module</span> <span class="n">load</span> <span class="n">nco</span>
+
+    <span class="o">./</span><span class="n">oisst_concat</span><span class="o">.</span><span class="n">py</span> <span class="o">&lt;</span><span class="n">yr</span><span class="o">&gt;</span> 
+</pre></div>
+</div>
 </div>
 <div class="section" id="data-location">
 <h2>Data location<a class="headerlink" href="#data-location" title="Permalink to this headline">¶</a></h2>
-<p>We’ve downloaded the CMAP dataset to:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">g</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">ia39</span><span class="o">/</span><span class="n">aus</span><span class="o">-</span><span class="n">ref</span><span class="o">-</span><span class="n">clim</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">nci</span><span class="o">/</span><span class="n">cmap</span><span class="o">/</span><span class="n">data</span> 
+<p>OISST data is available in</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">g</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">ia39</span><span class="o">/</span><span class="n">aus</span><span class="o">-</span><span class="n">ref</span><span class="o">-</span><span class="n">clim</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">nci</span><span class="o">/</span><span class="n">oisst</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">tmp</span><span class="o">/&lt;</span><span class="n">year</span><span class="o">&gt;/&lt;</span><span class="n">files</span><span class="o">&gt;</span>  <span class="o">--</span> <span class="n">Daily</span> <span class="n">files</span> <span class="n">located</span> <span class="n">here</span><span class="o">.</span>
+<span class="o">/</span><span class="n">g</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">ia39</span><span class="o">/</span><span class="n">aus</span><span class="o">-</span><span class="n">ref</span><span class="o">-</span><span class="n">clim</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">nci</span><span class="o">/</span><span class="n">oisst</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">yearly</span><span class="o">/&lt;</span><span class="n">files</span><span class="o">&gt;</span> <span class="o">--</span> <span class="n">Yearly</span> <span class="n">files</span> <span class="n">here</span><span class="o">.</span>
 </pre></div>
 </div>
-<p>There are two sub-folders:</p>
-<p><code class="docutils literal notranslate"><span class="pre">enh</span></code> for enhanced monthly data:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">precip.mon.ltm.nc</span></code>: enhanced long term monthly mean, derived from years 1981 to 2010</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">precip.mon.mean.nc</span></code>: enhanced monthly mean from 1979/01 to 2021/03</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">precip.pentad.mean.nc</span></code>: enhanced pentad mean from 1979/01 to 2016/12/27</p></li>
-</ul>
-<p><code class="docutils literal notranslate"><span class="pre">std</span></code> for standard monthly data:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">precip.mon.ltm.nc</span></code>: standard long term monthly mean, derived from years 1981 to 2010</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">precip.mon.mean.nc</span></code>: standard monthly mean from 1979/01 to 2021/03</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">precip.pentad.mean.nc</span></code>: standard pentad mean from 1979/01 to 2016/12/27</p></li>
-</ul>
-<p>The <code class="docutils literal notranslate"><span class="pre">update_log.txt</span></code> file keeps track of remote and local updates to files.
-The previously downloaded version is kept for reference in the <code class="docutils literal notranslate"><span class="pre">previous_version</span></code> sub-folders.</p>
 </div>
 <div class="section" id="license">
 <h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
-<p>Unknown.</p>
+<p>This dataset is freely available, there are no use limitations or accounts needed. Although there is an optional registration form that can be reached from the documentation page in the NOAA website under the “data access” session. Please consider <a class="reference external" href="https://docs.google.com/a/noaa.gov/forms/d/1zZQKz1qF5Wk7sqQuQmxCiBI4Y-xgtKcBqCykMtW21Dk/viewform?c=0&amp;w=1">register</a>, so you’ll receive updates on the data and as this also helps the data publishers to get an idea of the data usefulness and continue providing for public access.</p>
 </div>
 <div class="section" id="data-citation">
 <h2>Data citation<a class="headerlink" href="#data-citation" title="Permalink to this headline">¶</a></h2>
-<p>Unknown.</p>
+<p>Cite as: Huang, Boyin; Liu, Chunying; Banzon, Viva F.; Freeman, Eric; Graham, Garrett; Hankins, Bill; Smith, Thomas M.; Zhang, Huai-Min. (2020): NOAA 0.25-degree Daily Optimum Interpolation Sea Surface Temperature (OISST), Version 2.1. [indicate subset used]. NOAA National Centers for Environmental Information. <a class="reference external" href="https://doi.org/10.25921/RE9P-PT57">https://doi.org/10.25921/RE9P-PT57</a>. Accessed [date].</p>
 </div>
 <div class="section" id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p>Xie P and Arkin PA (1997):
-Global precipitation: A 17-year monthly analysis based on gauge observations, satellite estimates, and numerical model outputs.
-<em>Bulletin of the American Meteorological Society</em>, 78, 2539-2558.
-<a class="reference external" href="https://doi.org/10.1175/1520-0477(1997)078%3C2539:GPAYMA%3E2.0.CO;2">https://doi.org/10.1175/1520-0477(1997)078&lt;2539:GPAYMA&gt;2.0.CO;2</a></p>
-<p>Huffman GJ, Adler RF, Arkin P, Chang A, Ferraro R, Gruber A, Janowiak J, McNab A, Rudolf B, and Schneider U (1997).
-The Global Precipitation Climatology Project (GPCP) combined data set.
-<em>Bulletin of the American Meteorological Society</em>, 78, 5-20.
-<a class="reference external" href="https://doi.org/10.1175/1520-0477(1997)078%3C0005:TGPCPG%3E2.0.CO;2">https://doi.org/10.1175/1520-0477(1997)078&lt;0005:TGPCPG&gt;2.0.CO;2</a></p>
+<p>Huang, B., C. Liu, V. Banzon, E. Freeman, G. Graham, B. Hankins, T. Smith, and H.-M. Zhang, 2020: Improvements of the Daily Optimum Interpolation Sea Surface Temperature (DOISST) Version 2.1, Journal of Climate, 34, 2923-2939. <a class="reference external" href="https://journals.ametsoc.org/view/journals/clim/34/8/JCLI-D-20-0166.1.xml">doi:10.1175/JCLI-D-20-0166.1</a>
+Banzon, V., Smith, T. M., Chin, T. M., Liu, C., and Hankins, W., 2016: A long-term record of blended satellite and in situ sea-surface temperature for climate monitoring, modeling and environmental studies. Earth Syst. Sci. Data, 8, 165–176, <a class="reference external" href="http://www.earth-syst-sci-data.net/8/165/2016/essd-8-165-2016.html">doi:10.5194/essd-8-165-2016</a>
+Reynolds, R. W., T. M. Smith, C. Liu, D. B. Chelton, K. S. Casey, and M. G. Schlax, 2007: Daily high-resolution-blended analyses for sea surface temperature. Journal of Climate, 20, 5473–5496, <a class="reference external" href="http://dx.doi.org/10.1175/2007JCLI1824.1">doi:10.1175/JCLI-D-14-00293.1</a></p>
+<p>A <a class="reference external" href="https://www.ncei.noaa.gov/products/optimum-interpolation-sst">full reference list</a> is provided with the main documentation.</p>
 </div>
 <div class="section" id="acknowledgement">
 <h2>Acknowledgement<a class="headerlink" href="#acknowledgement" title="Permalink to this headline">¶</a></h2>
-<p>If you acquire CMAP Precipitation data products from PSL,
-we ask that you acknowledge us in your use of the data.
-This may be done by including text such as the following
-in any documents or publications using these data:</p>
-<p>“CMAP Precipitation data provided by the NOAA/OAR/ESRL PSL, Boulder, Colorado, USA,
-from their Web site at <location>”</p>
+<p>No statement provided.</p>
 </div>
 <div class="section" id="author-note">
 <h2>Author note<a class="headerlink" href="#author-note" title="Permalink to this headline">¶</a></h2>
-<p>We would also appreciate receiving a copy of the relevant publications.
-This will help PSL to justify keeping the CMAP Precipitation data set freely available online in the future.
-Thank you!</p>
 </div>
 <div class="section" id="assistance">
 <h2>Assistance<a class="headerlink" href="#assistance" title="Permalink to this headline">¶</a></h2>
-<p>For assistance with CMAP data on NCI, open a new issue at <a class="reference external" href="https://github.com/aus-ref-clim-data-nci/CMAP/issues">https://github.com/aus-ref-clim-data-nci/CMAP/issues</a></p>
+<p>For assistance with OISST data on NCI, open a new issue at <a class="reference external" href="https://github.com/aus-ref-clim-data-nci/OISST/issues">https://github.com/aus-ref-clim-data-nci/OISST/issues</a></p>
 </div>
 </div>
 
@@ -498,17 +474,17 @@ Thank you!</p>
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="datasets-intro.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="gpm.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Currently available</p>
+            <p class="prev-next-title">GPM IMERG</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="cmip6-etccdi.html" title="next page">
+    <a class='right-next' id="next-link" href="list.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">CMIP6_ETCCDI</p>
+        <p class="prev-next-title">Priority listing</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
