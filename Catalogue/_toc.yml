@@ -17,4 +17,5 @@ parts:
       - file: datasets/gpcc
       - file: datasets/gpcp
       - file: datasets/gpm
+      - file: datasets/oisst
     - file: datasets/list

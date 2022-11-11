@@ -100,7 +100,7 @@ feel free to submit an issue
   - precipitation (satellite)
   - 1
   - Paola Petrelli
-  - Currently in ua8
+  - Available
 * - GSDR
   - precipitation
   - 1
@@ -149,8 +149,8 @@ feel free to submit an issue
 * - [OISST](https://www.ncei.noaa.gov/products/optimum-interpolation-sst)
   - sea surface temperature
   - 1
-  - Paola Petrelli
-  - Currently available in ua8
+  - Sam Green
+  - Available
 * - PEODAS
   -
   -
