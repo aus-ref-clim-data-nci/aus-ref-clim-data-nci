@@ -76,8 +76,9 @@ No statement provided.
 
 For assistance with GPM IMERG data on NCI, open a new issue at https://github.com/aus-ref-clim-data-nci/GPM/issues
 
-NB Some of the original attributes contain slightly incorrect information and could generate warning in software that run attributes scan. As an example with cdo
+NB Some of the original attributes contain slightly incorrect information and could generate warning in software that run attributes scan. As an example with cdo:
 
+```
 Warning (cdfScanVarAttr): NetCDF: Variable not found - >Grid_time<
 Warning (cdfScanVarAttr): NetCDF: Variable not found - >Grid_lon<
 Warning (cdfScanVarAttr): NetCDF: Variable not found - >Grid_lat<
@@ -87,7 +88,8 @@ Warning (cdfScanVarAttr): NetCDF: Variable not found - >Grid_lonv<
 Warning (cdf_set_var): Inconsistent variable definition for lat_bnds!
 Warning (cdf_set_var): Inconsistent variable definition for lon_bnds!
 Warning (cdf_set_var): Inconsistent variable definition for time_bnds!
-
+```
+                                                                          
 These warnings can be safely ignored!
 
 
