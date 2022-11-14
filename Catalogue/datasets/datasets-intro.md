@@ -2,13 +2,24 @@
 
 These are the currently available datasets.
 
-**Index**
+#### Precipitation
 
-* [CMAP](cmap.md)			
-* [](cmip6-etccdi.md)		
-* [](cmorph.md)		
-* [](frogs.md)
-* [](ghcn.md)
+* [CMAP](cmap.md)
+* [CMORPH](cmorph.md)		
+* [FROGS](frogs.md)
+* [GHCN](ghcn.md)
 * [GPCC](gpcc.md)
-* [](gpcp.md)
-* [](gpm.md)
+* [GPCP](gpcp.md)
+* [GPM](gpm.md)
+
+#### Sea surface temperature
+
+* [OISST](oisst.md)
+
+#### Climate indices
+			
+* [CMIP6-ETCCDI](cmip6-etccdi.md)		
+
+#### Shapefiles
+
+* [shapefiles](shapefiles.md)
