@@ -22,4 +22,4 @@ These are the currently available datasets.
 
 **Shapefiles**
 
-* [shapefiles](shapefiles.md)
+* [Shapefile Collection](shapefiles.md)
