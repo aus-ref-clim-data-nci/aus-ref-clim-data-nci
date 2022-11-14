@@ -2,7 +2,7 @@
 
 These are the currently available datasets.
 
-#### Precipitation
+**Precipitation**
 
 * [CMAP](cmap.md)
 * [CMORPH](cmorph.md)		
@@ -12,14 +12,14 @@ These are the currently available datasets.
 * [GPCP](gpcp.md)
 * [GPM](gpm.md)
 
-#### Sea surface temperature
+**Sea surface temperature**
 
 * [OISST](oisst.md)
 
-#### Climate indices
+**Climate indices**
 			
 * [CMIP6-ETCCDI](cmip6-etccdi.md)		
 
-#### Shapefiles
+**Shapefiles**
 
 * [shapefiles](shapefiles.md)
