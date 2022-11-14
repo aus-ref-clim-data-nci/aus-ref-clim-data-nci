@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Currently available &#8212; Australian Community Reference Climate Data Collection @ NCI</title>
+    <title>Shapefiles &#8212; Australian Community Reference Climate Data Collection @ NCI</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -51,8 +51,6 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="CMAP" href="cmap.html" />
-    <link rel="prev" title="How to…" href="../collection/howto.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -118,12 +116,12 @@
   Datasets
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="datasets-intro.html">
    Currently available
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
@@ -222,7 +220,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/datasets/datasets-intro.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/datasets/shapefiles.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -242,7 +240,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/aus-ref-clim-data-nci/aus-ref-clim-data-nci/issues/new?title=Issue%20on%20page%20%2Fdatasets/datasets-intro.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/aus-ref-clim-data-nci/aus-ref-clim-data-nci/issues/new?title=Issue%20on%20page%20%2Fdatasets/shapefiles.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -269,24 +267,21 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#precipitation">
-   Precipitation
+  <a class="reference internal nav-link" href="#software">
+   Software
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sea-surface-temperature">
-   Sea surface temperature
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#climate-indices">
-   Climate indices
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#shapefiles">
-   Shapefiles
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python">
+     Python
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#other-languages">
+     Other languages
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -298,7 +293,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Currently available</h1>
+                <h1>Shapefiles</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -309,24 +304,21 @@
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#precipitation">
-   Precipitation
+  <a class="reference internal nav-link" href="#software">
+   Software
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sea-surface-temperature">
-   Sea surface temperature
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#climate-indices">
-   Climate indices
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#shapefiles">
-   Shapefiles
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python">
+     Python
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#other-languages">
+     Other languages
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -337,40 +329,54 @@
             
               <div>
                 
-  <div class="section" id="currently-available">
-<h1>Currently available<a class="headerlink" href="#currently-available" title="Permalink to this headline">¶</a></h1>
-<p>These are the currently available datasets.</p>
-<div class="section" id="precipitation">
-<h2>Precipitation<a class="headerlink" href="#precipitation" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="shapefiles">
+<h1>Shapefiles<a class="headerlink" href="#shapefiles" title="Permalink to this headline">¶</a></h1>
+<p>The Australian Community Reference Climate Data Collection &#64; NCI shapefile collection
+contains the following:</p>
+<p><code class="docutils literal notranslate"><span class="pre">/g/data/ia39/aus-ref-clim-data-nci/shapefiles/data/aus_states_territories/</span></code></p>
 <ul class="simple">
-<li><p><a class="reference internal" href="cmap.html"><span class="doc std std-doc">CMAP</span></a></p></li>
-<li><p><a class="reference internal" href="cmorph.html"><span class="doc std std-doc">CMORPH</span></a></p></li>
-<li><p><a class="reference internal" href="frogs.html"><span class="doc std std-doc">FROGS</span></a></p></li>
-<li><p><a class="reference internal" href="ghcn.html"><span class="doc std std-doc">GHCN</span></a></p></li>
-<li><p><a class="reference internal" href="gpcc.html"><span class="doc std std-doc">GPCC</span></a></p></li>
-<li><p><a class="reference internal" href="gpcp.html"><span class="doc std std-doc">GPCP</span></a></p></li>
-<li><p><a class="reference internal" href="gpm.html"><span class="doc std std-doc">GPM</span></a></p></li>
+<li><p>Shapefiles describing the states and territories of Australia</p></li>
+<li><p>See <code class="docutils literal notranslate"><span class="pre">aus_states_territories.ipynb</span></code> for details</p></li>
 </ul>
-</div>
-<div class="section" id="sea-surface-temperature">
-<h2>Sea surface temperature<a class="headerlink" href="#sea-surface-temperature" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">/g/data/ia39/aus-ref-clim-data-nci/shapefiles/data/australia/</span></code></p>
 <ul class="simple">
-<li><p><a class="reference internal" href="oisst.html"><span class="doc std std-doc">OISST</span></a></p></li>
+<li><p>Shapefiles describing the Australian coastline</p></li>
+<li><p>See <code class="docutils literal notranslate"><span class="pre">australia.ipynb</span></code> for details</p></li>
 </ul>
-</div>
-<div class="section" id="climate-indices">
-<h2>Climate indices<a class="headerlink" href="#climate-indices" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">/g/data/ia39/aus-ref-clim-data-nci/shapefiles/data/broadacre_regions/</span></code></p>
 <ul class="simple">
-<li><p><a class="reference internal" href="cmip6-etccdi.html"><span class="doc std std-doc">CMIP6-ETCCDI</span></a></p></li>
+<li><p>Shapefiles describing the Australian Bureau of Agricultural and Resource Economics and Sciences (ABARES) broadacre zones and regions</p></li>
+<li><p>See <code class="docutils literal notranslate"><span class="pre">broadacre_regions.ipynb</span></code> for details</p></li>
 </ul>
-</div>
-<div class="section" id="shapefiles">
-<h2>Shapefiles<a class="headerlink" href="#shapefiles" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">/g/data/ia39/aus-ref-clim-data-nci/shapefiles/data/nrm_regions/</span></code></p>
 <ul class="simple">
-<li><p><a class="reference internal" href="shapefiles.html"><span class="doc std std-doc">shapefiles</span></a></p></li>
+<li><p>Shapefiles describing the natural resource management (NRM) clusters</p></li>
+<li><p>See <code class="docutils literal notranslate"><span class="pre">nrm_regions.ipynb</span></code> for details</p></li>
 </ul>
+<p><code class="docutils literal notranslate"><span class="pre">/g/data/ia39/aus-ref-clim-data-nci/shapefiles/data/river_regions/</span></code></p>
+<ul class="simple">
+<li><p>Shapefiles describing the topographic drainage divisions and river regions derived from the Australian Hydrological Geospatial Fabric</p></li>
+<li><p>See <code class="docutils literal notranslate"><span class="pre">river_regions.ipynb</span></code> for details</p></li>
+</ul>
+<div class="section" id="software">
+<h2>Software<a class="headerlink" href="#software" title="Permalink to this headline">¶</a></h2>
+<p>Most programming languages have libraries for reading in shapefiles
+and selecting geographic data points that fall within them.</p>
+<div class="section" id="python">
+<h3>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h3>
+<p>If your workflow is based around Python and xarray,
+you can typically read a shapefile using <a class="reference external" href="https://geopandas.org">geopandas</a>.
+The resulting GeoDataFrame can then be passed to a function from the
+<a class="reference external" href="https://regionmask.readthedocs.io">regionmask</a> or
+<a class="reference external" href="https://clisops.readthedocs.io">clisops</a> library
+to select grid points from an xarray data set that fall within the shape/s.
+The <a class="reference external" href="https://github.com/AusClimateService/unseen/blob/bd1dd32f0de81ff03bf862eee0f14715e3d5bfbe/unseen/spatial_selection.py#L97">unseen</a>
+library has built on regionmask to provide more sophisticated functionality.</p>
 </div>
-<div class="toctree-wrapper compound">
+<div class="section" id="other-languages">
+<h3>Other languages<a class="headerlink" href="#other-languages" title="Permalink to this headline">¶</a></h3>
+<p>TODO.</p>
+</div>
 </div>
 </div>
 
@@ -398,21 +404,7 @@
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../collection/howto.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">How to…</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="cmap.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">CMAP</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+<div class='prev-next-area'>
 </div>
             
         </div>
