@@ -18,4 +18,5 @@ parts:
       - file: datasets/gpcp
       - file: datasets/gpm
       - file: datasets/oisst
+      - file: datasets/shapefiles
     - file: datasets/list
