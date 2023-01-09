@@ -14,6 +14,7 @@ These are the currently available datasets.
 
 **Sea surface temperature**
 
+* [HadISST](hadisst.md)
 * [OISST](oisst.md)
 
 **Climate indices**
