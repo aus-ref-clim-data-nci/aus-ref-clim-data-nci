@@ -423,11 +423,16 @@ These documents are also available on the filesystem in the dataset folder.</p>
 <h2>Data download<a class="headerlink" href="#data-download" title="Permalink to this headline">¶</a></h2>
 <p>We downloaded v1.3 daily and v2-3 monthly from the
 <a class="reference external" href="https://www.ncei.noaa.gov/data/global-precipitation-climatology-project-gpcp-daily/access/">NCEI server</a>, using a python based code.
-The code uses the requests module to download the files, to run it:
-python <a class="reference external" href="http://gpcp.py">gpcp.py</a> -y <year> -t <frequency>
-To see all the options:
-python <a class="reference external" href="http://gpcp.py">gpcp.py</a> –help
-Weekly updates are managed via the <a class="reference external" href="https://accessdev.nci.org.au/jenkins/job/aus-ref-clim-data-nci/job/GPCC/">Jenkins accessdev server</a>.</p>
+The code uses the requests module to download the files.</p>
+<p>To run it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">gpcp</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">y</span> <span class="o">&lt;</span><span class="n">year</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">t</span> <span class="o">&lt;</span><span class="n">frequency</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>To see all the options:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">gpcp</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">help</span>
+</pre></div>
+</div>
+<p>Weekly updates are managed via the <a class="reference external" href="https://accessdev.nci.org.au/jenkins/job/aus-ref-clim-data-nci/job/GPCC/">Jenkins accessdev server</a>.</p>
 </div>
 <div class="section" id="data-location">
 <h2>Data location<a class="headerlink" href="#data-location" title="Permalink to this headline">¶</a></h2>
