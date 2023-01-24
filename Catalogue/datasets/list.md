@@ -98,7 +98,7 @@ feel free to submit an issue
   - Available
 * - [GPM-IMERG](http://climate-cms.wikis.unsw.edu.au/GPM-IMERG)
   - precipitation (satellite)
-  - 1
+  - 0
   - Paola Petrelli
   - Available
 * - GSDR
@@ -128,7 +128,7 @@ feel free to submit an issue
   -
 * - [HadISST](https://www.metoffice.gov.uk/hadobs/hadisst/) 
   - sea surface temperature
-  - 1
+  - 0
   - Damien Irving
   - Available
 * - [JRA-55](https://jra.kishou.go.jp/JRA-55/index_en.html) 
@@ -148,7 +148,7 @@ feel free to submit an issue
   -
 * - [OISST](https://www.ncei.noaa.gov/products/optimum-interpolation-sst)
   - sea surface temperature
-  - 1
+  - 0
   - Sam Green
   - Available
 * - PEODAS
