@@ -19,5 +19,6 @@ parts:
       - file: datasets/gpm
       - file: datasets/hadisst
       - file: datasets/oisst
+      - file: datasets/mswep
       - file: datasets/shapefiles
     - file: datasets/list
