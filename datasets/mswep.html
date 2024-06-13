@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GPM IMERG &#8212; Australian Community Reference Climate Data Collection @ NCI</title>
+    <title>MSWEP &#8212; Australian Community Reference Climate Data Collection @ NCI</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -51,8 +51,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="HadISST" href="hadisst.html" />
-    <link rel="prev" title="GPCP" href="gpcp.html" />
+    <link rel="next" title="OISST" href="oisst.html" />
+    <link rel="prev" title="HadISST" href="hadisst.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -164,8 +164,8 @@
      GPCP
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="gpm.html">
      GPM IMERG
     </a>
    </li>
@@ -174,8 +174,8 @@
      HadISST
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="mswep.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      MSWEP
     </a>
    </li>
@@ -237,7 +237,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/datasets/gpm.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/datasets/mswep.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -257,7 +257,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/aus-ref-clim-data-nci/aus-ref-clim-data-nci/issues/new?title=Issue%20on%20page%20%2Fdatasets/gpm.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/aus-ref-clim-data-nci/aus-ref-clim-data-nci/issues/new?title=Issue%20on%20page%20%2Fdatasets/mswep.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -319,11 +319,6 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#author-note">
-   Author note
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#assistance">
    Assistance
   </a>
@@ -338,7 +333,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>GPM IMERG</h1>
+                <h1>MSWEP</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -384,11 +379,6 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#author-note">
-   Author note
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#assistance">
    Assistance
   </a>
@@ -402,90 +392,58 @@
             
               <div>
                 
-  <div class="section" id="gpm-imerg">
-<h1>GPM IMERG<a class="headerlink" href="#gpm-imerg" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="mswep">
+<h1>MSWEP<a class="headerlink" href="#mswep" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
-<p>GPM IMERG Final Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V07</p>
-<p>The Integrated Multi-satellitE Retrievals for GPM (IMERG) algorithm combines information from the GPM satellites to estimate global precipitation. IMERG is the continuation of TRMM. The latest version is V07 which combines the precipitation estimates collected by the TRMM satellite (2000 - 2015) with the estimates from the GPM satellite (2014 - present). IMERG V07 is being reprocessed for the entire TRMM-GPM record and thus <strong>supersedes</strong> all prior IMERG versions, as well as superseding the prior TRMM-based TMPA products.</p>
-<p>The monthly Global Precipitation Climatology Project (GPCP) Satellite-Gauge (SG) product over high-latitude ocean and tropical land is used to correct known biases.</p>
-<p>The dataset has a spatial resolution of 0.1°x0.1° (roughly 10x10 km) over the globe and a temporal resolution of 30 minutes. The temporal coverage starts on 2000-06-01 to present with about 6 months of delay (this is effectively up to 1 year for the netcdf version, see Data download section below).</p>
-<p>The IMERG system is run twice in near-real time:</p>
-<ul class="simple">
-<li><p>“Early” multi-satellite product ~4 hr after observation time using only forward morphing and</p></li>
-<li><p>“Late” multi-satellite product ~14 hr after observation time, using both forward and backward morphing
-and once after the monthly gauge analysis is received:</p></li>
-<li><p>“Final”, satellite-gauge product ~3.5 months after the observation month, using both forward and backward morphing and including monthly gauge analyses.</p></li>
-</ul>
-<p>For this collection only the “final” product is downloaded.</p>
-<p>More information and a detailed description of the algorithm and data sources used are available on the <a class="reference external" href="https://gpm.nasa.gov/data/imerg">NASA GPM website</a> and on the <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/GPM_3IMERGHH_07/summary">GES DISC website</a>.</p>
+<p>We have replicated the monthly, daily, and 3hourly Multi-Source Weighted-Ensemble Precipitation (mswep) data from GloH2O.</p>
+<p>MSWEP is a global precipitation product with a 0.1° resolution available from 1979 - 2020. The product is unique in that it merges gauge, satellite, and reanalysis data to obtain the highest quality precipitation estimates at every location. MSWEP incorporates daily gauge observations and accounts for gauge reporting times to reduce temporal mismatches between satellite-reanalysis estimates and gauge observations. MSWEP is compatible with GloH2O’s operational Multi-Source Weather (MSWX); MSWX forecasts can thus be used to extend MSWEP into the future. MSWEP tends to exhibit better performance than other precipitation products in both densely gauged and ungauged regions (see <a class="reference external" href="https://hess.copernicus.org/articles/21/6201/2017/">Beck et al., 2017</a>, and <a class="reference external" href="https://hess.copernicus.org/articles/23/207/2019/">Beck et al., 2019</a>).</p>
+<p>This is an extract of the dataset description from the <a class="reference external" href="https://www.gloh2o.org/">website</a>
+where you can find more information on this data. We replicated only the historical precipitation data, if the realtime data is required then please open a new issue in  <a class="reference external" href="https://github.com/aus-ref-clim-data-nci/mswep/issues">https://github.com/aus-ref-clim-data-nci/mswep/issues</a></p>
 </div>
 <div class="section" id="data-download">
 <h2>Data download<a class="headerlink" href="#data-download" title="Permalink to this headline">¶</a></h2>
-<p>The data is downloaded from the <a class="reference external" href="https://gpm1.gesdisc.eosdis.nasa.gov/opendap/GPM_L3/GPM_3IMERGHH.07/">GESC DISC hyrax server</a> using the opendap protocol to get it in netcdf4 format instead of the original HDF5. This version is updated irregularly, so the delay in data availability is effectively up to a year from present.
-As each original file contains only 1 timestep for ease of use the files are then concatenated in daily files using CDO and rechunked using NCO.
-Updates are run with a monthly frequency via the <a class="reference external" href="https://github.com/aus-ref-clim-data-nci/GPM/actions/workflows/V07_dl.yml">GitHub action</a>.</p>
-<p>The code used to download the files is written in bash and uses wget:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">bash</span> <span class="n">gpm</span><span class="o">.</span><span class="n">sh</span> <span class="o">-</span><span class="n">y</span> <span class="o">&lt;</span><span class="n">year</span><span class="o">&gt;</span>
+<p>The data is downloaded from a google drive hosted by <a class="reference external" href="https://www.gloh2o.org">https://www.gloh2o.org</a>. The data is monthly, daily, and 3hourly historical data from 1979 - 2020.</p>
+<p>The script uses rclone, to run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash<span class="w"> </span>mswep.sh<span class="w"> </span>-f<span class="w"> </span>&lt;freq&gt;.
 </pre></div>
 </div>
-<p>You just need to supply a year and the code will download all files in that year. If the output directory already contains files from the specified year then wget will only download new files or files that have been updated on the server.</p>
-<p>The code used to concatenate the files is a bash script calling CDO</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">bash</span> <span class="n">gpm_concat</span><span class="o">.</span><span class="n">sh</span>
+<p>Where <code class="docutils literal notranslate"><span class="pre">&lt;freq&gt;</span></code> is mon, day, or 3hr.</p>
+<p>The code used to concatenate the files is a bash script calling CDO:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash<span class="w"> </span>mswep_concat.sh<span class="w"> </span>-f<span class="w"> </span>&lt;freq&gt;
 </pre></div>
 </div>
-<p>which runs</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cdo --silent --no_warnings --no_history -L -s -f nc4c -z zip_4 cat 3B-HHR.MS.MRG.3IMERG.${yr}${mn}${day}*.nc tmp.nc
-ncks --cnk_dmn time,48 --cnk_dmn lat,600 --cnk_dmn lon,600 tmp.nc 3B-HHR.MS.MRG.3IMERG.${yr}${mn}${day}.nc 
-</pre></div>
-</div>
-<p>A record of updates is kept in <code class="docutils literal notranslate"><span class="pre">update_log.txt</span></code> for downloads and a separate log <code class="docutils literal notranslate"><span class="pre">concat_log.txt</span></code> for the concatenation step.
-We are only keeping the current year original files. The last modified dates for the original files are recorded in original/mod_date_<year>.txt files.</p>
+<p><strong>Note:</strong> rclone was used to download this data from Google Drive. This required me to add the MSWEP shared folder to my Drive and link rclone to my Drive account. If more up-to-date MSWEP data is released in the future then the user running the download script needs to add the shared folder and <a class="reference external" href="https://www.youtube.com/watch?v=vPs9K_VC-lg">link rclone</a>.</p>
 </div>
 <div class="section" id="data-location">
 <h2>Data location<a class="headerlink" href="#data-location" title="Permalink to this headline">¶</a></h2>
-<p>GPM IMERG V07 data in available in</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">g</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">ia39</span><span class="o">/</span><span class="n">aus</span><span class="o">-</span><span class="n">ref</span><span class="o">-</span><span class="n">clim</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">nci</span><span class="o">/</span><span class="n">gpm</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">V07</span><span class="o">/&lt;</span><span class="n">yr</span><span class="o">&gt;/&lt;</span><span class="n">files</span><span class="o">&gt;</span>
+<p>We’ve downloaded the MSWEP netCDF data to:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">g</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">ia39</span><span class="o">/</span><span class="n">aus</span><span class="o">-</span><span class="n">ref</span><span class="o">-</span><span class="n">clim</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">nci</span><span class="o">/</span><span class="n">mswep</span><span class="o">/</span><span class="n">data</span><span class="o">/&lt;</span><span class="n">freq</span><span class="o">&gt;/</span><span class="n">mswep_v280_</span><span class="o">&lt;</span><span class="n">freq</span><span class="o">&gt;</span><span class="n">_</span><span class="o">&lt;</span><span class="n">year</span><span class="o">&gt;.</span><span class="n">nc</span>
 </pre></div>
 </div>
+<p>Where <code class="docutils literal notranslate"><span class="pre">&lt;freq&gt;</span></code> is mon, day, or 3hr; <code class="docutils literal notranslate"><span class="pre">&lt;year&gt;</span></code> is a year in the range 1979 - 2020. The Monthly, Daily, and 3Hourly data have been concatenated into yearly files.</p>
 </div>
 <div class="section" id="license">
 <h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://science.nasa.gov/earth-science/earth-science-data/data-information-policy/">NASA Data &amp; Information Policy</a></p>
+<p>Data is freely available but there are restrictions on commercial use, please see their <a class="reference external" href="https://www.gloh2o.org/">website</a>.</p>
+<p>“MSWEP is released under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license. Please <a class="reference external" href="https://www.gloh2o.org/contact/">contact us</a> if you are affiliated with a commercial entity and want to trial MSWEP. If you do not have a commercial affiliation and you intend to use the product for non-commercial purposes, please send us a <a class="reference external" href="https://www.gloh2o.org/">request</a> by clicking “APLY HERE” under the “Data license” section. You will receive a link to the Google Drive containing MSWEP once your request has been approved. “</p>
 </div>
 <div class="section" id="data-citation">
 <h2>Data citation<a class="headerlink" href="#data-citation" title="Permalink to this headline">¶</a></h2>
-<p>Huffman, G.J., E.F. Stocker, D.T. Bolvin, E.J. Nelkin, Jackson Tan (2023), GPM IMERG Final Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V07, Greenbelt, MD, Goddard Earth Sciences Data and Information Services Center (GES DISC), Accessed: [Data Access Date], 10.5067/GPM/IMERG/3B-HH/07</p>
+<p>No citation has been provided on their <a class="reference external" href="https://www.gloh2o.org/">website</a>.</p>
 </div>
 <div class="section" id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p>GLOBAL PRECIPITATION MEASUREMENT PRECIPITATION PROCESSING SYSTEM, File Specification. 2023. (<a class="reference external" href="https://arthurhou.pps.eosdis.nasa.gov/Documents/IMERG_V07_ATBD_final.pdf">https://arthurhou.pps.eosdis.nasa.gov/Documents/IMERG_V07_ATBD_final.pdf</a>)</p>
-<p>Jin, Daeho, Oreopoulos, Lazaros, Lee, Dongmin, Tan, Jackson, Cho, Nayeong. 2021.  Cloud-Precipitation Hybrid Regimes and their Projection onto IMERG Precipitation Data. Journal of Applied Meteorology and Climatology. Vol. -1, No. aop, DOI: 10.1175/JAMC-D-20-0253.1  ISSN: 1558-8424, 1558-8432</p>
+<p>Beck, H. E., Wood, E. F., Pan, M., Fisher, C. K., Miralles, D. M., van Dijk, A. I. J. M., McVicar, T. R., and Adler, R. F. MSWEP V2 global 3‑hourly 0.1° precipitation: methodology and quantitative assessment Bulletin of the American Meteorological Society 100(3), 473–500, 2019</p>
 </div>
 <div class="section" id="acknowledgement">
 <h2>Acknowledgement<a class="headerlink" href="#acknowledgement" title="Permalink to this headline">¶</a></h2>
-<p>No statement provided.</p>
-</div>
-<div class="section" id="author-note">
-<h2>Author note<a class="headerlink" href="#author-note" title="Permalink to this headline">¶</a></h2>
-<p>This data has been updated to from V06B to V07 since it now <strong>supersedes</strong> all prior IMERG versions, as well as superseding the prior TRMM-based TMPA products. The V06B data still exists here: <code class="docutils literal notranslate"><span class="pre">/g/data/ia39/aus-ref-clim-data-nci/gpm/data/V06B/&lt;yr&gt;/&lt;files&gt;</span></code> but will be soon removed. You can see more info about this version <a class="reference external" href="https://disc.gsfc.nasa.gov/datasets/GPM_3IMERGHH_06/summary">here</a>.</p>
+<p>ECMWF, NASA, and NOAA and thanked for producing the ERA5, IMERG, and GridSat datasets, respectively. The Water Center for Arid and Semi-Arid Zones in Latin America and the Caribbean (CAZALAC) and the Centro de Ciencia del Clima y la Resiliencia (CR) 2 (FONDAP 15110009) are thanked for sharing Mexican and Chilean gauge data, respectively. We also acknowledge the gauge data providers in the Latin American Climate Assessment and Dataset (LACA&amp;D) project: IDEAM (Colombia), INAMEH (Venezuela), INAMHI (Ecuador), SENAMHI (Peru), SENAMHI (Bolivia), and DMC (Chile). We wish to thank Ali Alijanian, Koen Verbist, and Piyush Jain for providing additional gauge data.</p>
 </div>
 <div class="section" id="assistance">
 <h2>Assistance<a class="headerlink" href="#assistance" title="Permalink to this headline">¶</a></h2>
-<p>For assistance with GPM IMERG data on NCI, open a new issue at <a class="reference external" href="https://github.com/aus-ref-clim-data-nci/GPM/issues">https://github.com/aus-ref-clim-data-nci/GPM/issues</a></p>
-<p>NB Some of the original attributes contain slightly incorrect information and could generate warning in software that run attributes scan. As an example with cdo:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Warning (cdfScanVarAttr): NetCDF: Variable not found - &gt;Grid_time&lt;
-Warning (cdfScanVarAttr): NetCDF: Variable not found - &gt;Grid_lon&lt;
-Warning (cdfScanVarAttr): NetCDF: Variable not found - &gt;Grid_lat&lt;
-Warning (cdfScanVarAttr): NetCDF: Variable not found - &gt;Grid_latv&lt;
-Warning (cdfScanVarAttr): NetCDF: Variable not found - &gt;Grid_nv&lt;
-Warning (cdfScanVarAttr): NetCDF: Variable not found - &gt;Grid_lonv&lt;
-Warning (cdf_set_var): Inconsistent variable definition for lat_bnds!
-Warning (cdf_set_var): Inconsistent variable definition for lon_bnds!
-Warning (cdf_set_var): Inconsistent variable definition for time_bnds!
-</pre></div>
-</div>
-<p>These warnings can be safely ignored!</p>
+<p>For assistance with GHCN data on NCI,
+open a new issue at <a class="reference external" href="https://github.com/aus-ref-clim-data-nci/mswep/issues">https://github.com/aus-ref-clim-data-nci/mswep/issues</a></p>
 </div>
 </div>
 
@@ -514,17 +472,17 @@ Warning (cdf_set_var): Inconsistent variable definition for time_bnds!
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="gpcp.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="hadisst.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">GPCP</p>
+            <p class="prev-next-title">HadISST</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="hadisst.html" title="next page">
+    <a class='right-next' id="next-link" href="oisst.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">HadISST</p>
+        <p class="prev-next-title">OISST</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

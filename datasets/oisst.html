@@ -52,7 +52,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Shapefiles" href="shapefiles.html" />
-    <link rel="prev" title="HadISST" href="hadisst.html" />
+    <link rel="prev" title="MSWEP" href="mswep.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -172,6 +172,11 @@
    <li class="toctree-l2">
     <a class="reference internal" href="hadisst.html">
      HadISST
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mswep.html">
+     MSWEP
     </a>
    </li>
    <li class="toctree-l2 current active">
@@ -410,7 +415,7 @@
 <h2>Data download<a class="headerlink" href="#data-download" title="Permalink to this headline">¶</a></h2>
 <p>The data is downloaded from <a class="reference external" href="https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/">ncei.noaa.gov</a> using wget. This data is updated regularly, every ~1-2 days.
 Since the original daily files are relatively small in size (~1.6mb), they are then concatenated in yearly files using CDO and rechunked using NCO.
-Updates are run with a weekly frequency via the <a class="reference external" href="https://accessdev.nci.org.au/jenkins/job/aus-ref-clim-data-nci/job/OISST/">accessdev Jenkins server</a>.</p>
+Updates are run with a weekly frequency via a <span class="xref myst">GitHub Action</span>.</p>
 <p>The code used to download the files is python based, to see all the options:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">python3</span> <span class="n">oisst</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">help</span>
 </pre></div>
@@ -484,11 +489,11 @@ Reynolds, R. W., T. M. Smith, C. Liu, D. B. Chelton, K. S. Casey, and M. G. Schl
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="hadisst.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="mswep.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">HadISST</p>
+            <p class="prev-next-title">MSWEP</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="shapefiles.html" title="next page">

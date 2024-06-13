@@ -6,7 +6,7 @@ The CPC Merged Analysis of Precipitation (CMAP) includes monthly and pentad glob
 It has a standard version and one enhanced with NCEP Reanalysis.
 CMAP covers from 1979 to near the present on a global grid at 2.5 degree latitude x 2.5 degree longitude resolution.
 For more information you can check the original data source on the
-[NOAA Physical Sceince Laboratory (PSL) website](https://psl.noaa.gov/data/gridded/data.cmap.html)
+[NOAA Physical Science Laboratory (PSL) website](https://psl.noaa.gov/data/gridded/data.cmap.html)
 and the [UCAR climate data guide](https://climatedataguide.ucar.edu/climate-data/cmap-cpc-merged-analysis-precipitation)
 for a review of the dataset.
 

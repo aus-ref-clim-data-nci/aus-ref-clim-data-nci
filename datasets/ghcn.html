@@ -175,6 +175,11 @@
     </a>
    </li>
    <li class="toctree-l2">
+    <a class="reference internal" href="mswep.html">
+     MSWEP
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="oisst.html">
      OISST
     </a>
@@ -413,7 +418,7 @@ For more information on methods and data quality assurance can be found <a class
 <h2>Data download<a class="headerlink" href="#data-download" title="Permalink to this headline">¶</a></h2>
 <p>The data is downloaded from the NCDC NOAA ftp server:<br />
 <span class="xref myst">ftp://ftp.ncdc.noaa.gov/pub/data/ghcn</span></p>
-<p>The files are updated daily on the server. We update them once a week, the automated updates are managed via the <a class="reference external" href="https://accessdev.nci.org.au/jenkins/job/aus-ref-clim-data-nci/job/GHCN/">Jenkins accessdev server</a>.</p>
+<p>The files are updated daily on the server. We update them once a week, the automated updates are managed via a <a class="reference external" href="https://github.com/aus-ref-clim-data-nci/GHCN/actions/workflows/ghcn.yml">GitHub Action</a>.</p>
 <p>The script uses wget, to run: <code class="docutils literal notranslate"><span class="pre">./ghcn.sh</span></code></p>
 <p>A record of the updates is kept in <code class="docutils literal notranslate"><span class="pre">update_log.txt</span></code>.</p>
 </div>

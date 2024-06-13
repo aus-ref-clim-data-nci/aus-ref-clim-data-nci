@@ -175,6 +175,11 @@
     </a>
    </li>
    <li class="toctree-l2">
+    <a class="reference internal" href="mswep.html">
+     MSWEP
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="oisst.html">
      OISST
     </a>
@@ -432,7 +437,7 @@ The code uses the requests module to download the files.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">gpcp</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">help</span>
 </pre></div>
 </div>
-<p>Weekly updates are managed via the <a class="reference external" href="https://accessdev.nci.org.au/jenkins/job/aus-ref-clim-data-nci/job/GPCC/">Jenkins accessdev server</a>.</p>
+<p>Weekly updates are managed via the <a class="reference external" href="https://github.com/aus-ref-clim-data-nci/GPCP/actions/workflows/gpcp.yml">GitHub Action</a>.</p>
 </div>
 <div class="section" id="data-location">
 <h2>Data location<a class="headerlink" href="#data-location" title="Permalink to this headline">¶</a></h2>
@@ -457,6 +462,11 @@ then this is indicated in the filenames as in this example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">gpcp_v02r03</span><span class="o">-</span><span class="n">preliminary_monthly_d201908_c20190910</span><span class="o">.</span><span class="n">nc</span>
 </pre></div>
 </div>
+<p><strong>NB:</strong> We’ve now concatenated the V1-3 daily data into yearly files, they are located at:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">g</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">ia39</span><span class="o">/</span><span class="n">aus</span><span class="o">-</span><span class="n">ref</span><span class="o">-</span><span class="n">clim</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">nci</span><span class="o">/</span><span class="n">gpcp</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">day_concat</span><span class="o">/&lt;</span><span class="n">files</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Files are in netcdf4 format and filenames are <code class="docutils literal notranslate"><span class="pre">gpcp_v01r03_daily_YYYY.nc</span></code> for v1.3 daily.</p>
 </div>
 <div class="section" id="license">
 <h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
