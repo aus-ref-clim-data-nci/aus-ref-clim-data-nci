@@ -94,12 +94,12 @@ feel free to submit an issue
 * - [GPCP](https://www.ncei.noaa.gov/products/climate-data-records/precipitation-gpcp-daily)
   - precipitation
   - 0
-  - Paola Petrelli
+  - Paola Petrelli / Sam Green
   - Available
 * - [GPM-IMERG](http://climate-cms.wikis.unsw.edu.au/GPM-IMERG)
   - precipitation (satellite)
   - 0
-  - Paola Petrelli
+  - Paola Petrelli / Sam Green
   - Available
 * - GSDR
   - precipitation
@@ -136,6 +136,11 @@ feel free to submit an issue
   - 2
   -
   -
+* - [MSWEP](https://www.gloh2o.org) 
+  - precipitation
+  - 0
+  - Sam Green
+  - Available
 * - NCEP2
   - reanalysis
   - 3

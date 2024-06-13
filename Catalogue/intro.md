@@ -29,5 +29,5 @@ to deliver such a collection.
 ## Who's involved? 
 
 - Damien Irving, Chloe Mackallah and Claire Trenham from ACS 
-- Paola Petrelli from CLEX 
+- Paola Petrelli and Sam Green from CLEX 
 - Other ACS/CLEX staff and community members as required 
