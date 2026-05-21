@@ -2,22 +2,18 @@
 
 ## Scope of the collection
 
-The scope of the Australian Community Reference Climate Data Collection is to host replicas of climate datasets
+The scope of the Australian Community Reference Climate Data Collection @ NCI is to host replicas of climate datasets
 that are of interest to the Australian climate research community.
 We hope that this will save people time and reduce dataset duplication.
 
-The datasets currently included in the collection are listed in the sidebar along with our working list of potential future datasets.
-The initial collection was compiled by a group of data managers based on current dataset usage by the climate community
-and the expected needs of the ACS project.
-We sought ACS and wider community input via a [survey](https://forms.gle/4BiXS3wtEPAwCgA6A) and reviewed the initial list based on the results. 
-This initial list might change in the future based on user requests and changes to project priorities. 
+The datasets currently included in the collection are listed in the sidebar along with our working list of potential future datasets. 
 To make the management of both the datasets themselves and our storage allocation on NCI viable and transparent
 we have some criteria to determine which datasets to add/remove from the collection.
 
 ### Criteria to accept a new dataset
 
-The primary criteria is that a dataset should be useful to the ACS project,
-as this is the project that provides the storage.
+The primary criteria is that a dataset should be useful to the Australian Climate Service (ACS) project,
+as this is the project that pays for the storage space on NCI.
 However, to avoid unnecessary duplication of data on the NCI servers and to facilitate user experience,
 exceptions to this rule are allowed where:
  - other partners require a different version or extra variables from datasets already hosted in this collection
