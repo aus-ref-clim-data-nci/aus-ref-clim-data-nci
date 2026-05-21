@@ -4,12 +4,12 @@
 
 Anyone working/studying in the Australian climate science community
 with an [NCI account](https://nci.org.au/users/how-access-nci)
-can access the collection by requesting access to project ia39
-[here](https://my.nci.org.au/mancini/project/ia39).
+can access the collection by requesting access to project jt48
+[here](https://my.nci.org.au/mancini/project/jt48).
 
 ## Find data
 
-The collection can be found on NCI systems at `/g/data/ia39/aus-ref-clim-data-nci/`.
+The collection can be found on NCI systems at `/g/data/jt48/aus-ref-clim-data-nci/`.
 You can search the subdictories manually to find what you need
 or make use of our [intake-esm catalogue](https://github.com/aus-ref-clim-data-nci/acs-replica-intake).
 
@@ -42,18 +42,18 @@ but will sometimes be limited due to storage, staff time or ACS project constrai
 ## Add a new dataset
 
 For each new dataset create:
-   - a folder with the dataset acronym in lowercase letters in `/g/data/ia39/aus-ref-clim-data-nci/`,
+   - a folder with the dataset acronym in lowercase letters in `/g/data/jt48/aus-ref-clim-data-nci/`,
      with a `data` and a `code` subfolders.
    - a new repository in the [aus-ref-clim-data-nci github organisation](https://github.com/aus-ref-clim-data-nci).
    - the repository should be then cloned in the `code` subfolder.
 
 ````{admonition} **Permissions**
 The `dataset` directory should be owned by the data custodian.
-The `data` folder is owned by `ia39` for accounting reasons, and acls are used to give `ia39_w` writing access:
+The `data` folder is owned by `jt48` for accounting reasons, and acls are used to give `jt48_w` writing access:
 ```{code}
-setfacl -R -m g:ia39_w:rwx code/
+setfacl -R -m g:jt48_w:rwx code/
 ```
-The `code` folder is owned by `ia39_w` with `rwx` permissions for the group, other can read but not write or execute.
+The `code` folder is owned by `jt48_w` with `rwx` permissions for the group, other can read but not write or execute.
 For help with posix and acsl permissions see [ACDG Governance guide](https://acdguide.github.io/Governance/tech/permissions.html#acls-cheat-sheet).
 ````
 
