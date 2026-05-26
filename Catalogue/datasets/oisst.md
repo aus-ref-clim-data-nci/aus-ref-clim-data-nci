@@ -1,5 +1,7 @@
 # OISST
-  
+
+![workflow](https://github.com/aus-ref-clim-data-nci/OISST/actions/workflows/oisst.yml/badge.svg)
+
 ## Overview
 
 The NOAA 1/4 degree Daily Optimum Interpolation Sea Surface Temperature (OISST) is a long term Climate Data Record that incorporates observations from different platforms (satellites, ships, buoys and Argo floats) into a regular global grid. The dataset is interpolated to fill gaps on the grid and create a spatially complete map of sea surface temperature. Satellite and ship observations are referenced to buoys to compensate for platform differences and sensor biases.
@@ -12,13 +14,13 @@ More information and a detailed description of the algorithm and data sources us
 
 ## Data download
 
-The data is downloaded from [ncei.noaa.gov](https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/) using wget. This data is updated regularly, every ~1-2 days.
+The data is downloaded from [ncei.noaa.gov](https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/) using wget. This data is updated regularly, once a week.
 Since the original daily files are relatively small in size (~1.6mb), they are then concatenated in yearly files using CDO and rechunked using NCO.
 Updates are run with a weekly frequency via a [GitHub Action]([https://accessdev.nci.org.au/jenkins/job/aus-ref-clim-data-nci/job/OISST/](https://github.com/aus-ref-clim-data-nci/OISST/actions/workflows/oisst.yml)).
 
-The code used to download the files is python based, to see all the options:
+The code used to download the files is bash based, to see all the options:
 ```{code}
-    python3 oisst.py --help
+    bash oisst.py --help
 ```
 The code used to concatenate the files is a python script calling CDO and NCO:
 ```{code}
@@ -33,8 +35,7 @@ The code used to concatenate the files is a python script calling CDO and NCO:
 OISST data is available in
 
 ```
-/g/data/ia39/aus-ref-clim-data-nci/oisst/data/tmp/<year>/<files>  -- Daily files located here.
-/g/data/ia39/aus-ref-clim-data-nci/oisst/data/yearly/<files> -- Yearly files here.
+/g/data/jt48/aus-ref-clim-data-nci/oisst/data/yearly/<files> -- Yearly files here.
 ```
 
 ## License
