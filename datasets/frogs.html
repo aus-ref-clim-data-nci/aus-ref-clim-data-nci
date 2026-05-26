@@ -404,6 +404,7 @@
                 
   <div class="section" id="frogs">
 <h1>FROGS<a class="headerlink" href="#frogs" title="Permalink to this headline">¶</a></h1>
+<p><img alt="workflow" src="https://github.com/aus-ref-clim-data-nci/FROGS/actions/workflows/frogs.yml/badge.svg" /></p>
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
 <p>The Frequent Rainfall Observations on GridS (FROGS) database
@@ -419,13 +420,20 @@ and in particular to their news page for updates.</p>
 </div>
 <div class="section" id="data-download">
 <h2>Data download<a class="headerlink" href="#data-download" title="Permalink to this headline">¶</a></h2>
-<p>The data is downloaded from the <a class="reference external" href="https://ftp.climserv.ipsl.polytechnique.fr/FROGs/1DD_V1/">IPSL ftp site</a>, using the <a class="reference external" href="http://frogs.py">frogs.py</a> python code available in this repository.
-Updates of the original data are sporadic, we check if any update is available with monthly frequency. Tha automated updates are managed via the <a class="reference external" href="https://accessdev.nci.org.au/jenkins/job/aus-ref-clim-data-nci/job/FROGs/">Jenkins accessdev server</a>.</p>
+<p>The data is downloaded from the <a class="reference external" href="https://ftp.climserv.ipsl.polytechnique.fr/FROGs/1DD_V1/">IPSL ftp site</a>, using the <a class="reference external" href="http://frogs.sh">frogs.sh</a> bash code available in this repository.
+Updates of the original data are sporadic, we check if any update is available with monthly frequency. Tha automated updates are managed via the GitHub action.</p>
 </div>
 <div class="section" id="data-location">
 <h2>Data location<a class="headerlink" href="#data-location" title="Permalink to this headline">¶</a></h2>
-<p>We’ve downloaded FROGS data to:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">g</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">ia39</span><span class="o">/</span><span class="n">aus</span><span class="o">-</span><span class="n">ref</span><span class="o">-</span><span class="n">clim</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">nci</span><span class="o">/</span><span class="n">frogs</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="mi">1</span><span class="n">DD_V1</span><span class="o">/&lt;</span><span class="n">dataset</span><span class="o">&gt;/&lt;</span><span class="n">files</span><span class="o">&gt;</span>
+<p>We’ve downloaded 2 versions of the FROGS data to:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># 1DD_V1:</span>
+
+<span class="o">/</span><span class="n">g</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">ia39</span><span class="o">/</span><span class="n">aus</span><span class="o">-</span><span class="n">ref</span><span class="o">-</span><span class="n">clim</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">nci</span><span class="o">/</span><span class="n">frogs</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="mi">1</span><span class="n">DD_V1</span><span class="o">/&lt;</span><span class="n">dataset</span><span class="o">&gt;/&lt;</span><span class="n">files</span><span class="o">&gt;</span>
+
+<span class="c1"># 1DD_V2</span>
+
+<span class="o">/</span><span class="n">g</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">ia39</span><span class="o">/</span><span class="n">aus</span><span class="o">-</span><span class="n">ref</span><span class="o">-</span><span class="n">clim</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">nci</span><span class="o">/</span><span class="n">frogs</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="mi">1</span><span class="n">DD_V2</span><span class="o">/&lt;</span><span class="n">dataset</span><span class="o">&gt;/&lt;</span><span class="n">files</span><span class="o">&gt;</span>
+
 </pre></div>
 </div>
 <p>Each <code class="docutils literal notranslate"><span class="pre">&lt;dataset&gt;</span></code> is listed below depending on the source data type and spatial coverage.</p>

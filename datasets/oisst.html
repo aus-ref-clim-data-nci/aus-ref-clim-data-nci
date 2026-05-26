@@ -404,6 +404,7 @@
                 
   <div class="section" id="oisst">
 <h1>OISST<a class="headerlink" href="#oisst" title="Permalink to this headline">¶</a></h1>
+<p><img alt="workflow" src="https://github.com/aus-ref-clim-data-nci/OISST/actions/workflows/oisst.yml/badge.svg" /></p>
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
 <p>The NOAA 1/4 degree Daily Optimum Interpolation Sea Surface Temperature (OISST) is a long term Climate Data Record that incorporates observations from different platforms (satellites, ships, buoys and Argo floats) into a regular global grid. The dataset is interpolated to fill gaps on the grid and create a spatially complete map of sea surface temperature. Satellite and ship observations are referenced to buoys to compensate for platform differences and sensor biases.</p>
@@ -413,11 +414,11 @@
 </div>
 <div class="section" id="data-download">
 <h2>Data download<a class="headerlink" href="#data-download" title="Permalink to this headline">¶</a></h2>
-<p>The data is downloaded from <a class="reference external" href="https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/">ncei.noaa.gov</a> using wget. This data is updated regularly, every ~1-2 days.
+<p>The data is downloaded from <a class="reference external" href="https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/">ncei.noaa.gov</a> using wget. This data is updated regularly, once a week.
 Since the original daily files are relatively small in size (~1.6mb), they are then concatenated in yearly files using CDO and rechunked using NCO.
 Updates are run with a weekly frequency via a <span class="xref myst">GitHub Action</span>.</p>
-<p>The code used to download the files is python based, to see all the options:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">python3</span> <span class="n">oisst</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">help</span>
+<p>The code used to download the files is bash based, to see all the options:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">bash</span> <span class="n">oisst</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">help</span>
 </pre></div>
 </div>
 <p>The code used to concatenate the files is a python script calling CDO and NCO:</p>
@@ -431,8 +432,7 @@ Updates are run with a weekly frequency via a <span class="xref myst">GitHub Act
 <div class="section" id="data-location">
 <h2>Data location<a class="headerlink" href="#data-location" title="Permalink to this headline">¶</a></h2>
 <p>OISST data is available in</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">g</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">ia39</span><span class="o">/</span><span class="n">aus</span><span class="o">-</span><span class="n">ref</span><span class="o">-</span><span class="n">clim</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">nci</span><span class="o">/</span><span class="n">oisst</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">tmp</span><span class="o">/&lt;</span><span class="n">year</span><span class="o">&gt;/&lt;</span><span class="n">files</span><span class="o">&gt;</span>  <span class="o">--</span> <span class="n">Daily</span> <span class="n">files</span> <span class="n">located</span> <span class="n">here</span><span class="o">.</span>
-<span class="o">/</span><span class="n">g</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">ia39</span><span class="o">/</span><span class="n">aus</span><span class="o">-</span><span class="n">ref</span><span class="o">-</span><span class="n">clim</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">nci</span><span class="o">/</span><span class="n">oisst</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">yearly</span><span class="o">/&lt;</span><span class="n">files</span><span class="o">&gt;</span> <span class="o">--</span> <span class="n">Yearly</span> <span class="n">files</span> <span class="n">here</span><span class="o">.</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">g</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">jt48</span><span class="o">/</span><span class="n">aus</span><span class="o">-</span><span class="n">ref</span><span class="o">-</span><span class="n">clim</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">nci</span><span class="o">/</span><span class="n">oisst</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">yearly</span><span class="o">/&lt;</span><span class="n">files</span><span class="o">&gt;</span> <span class="o">--</span> <span class="n">Yearly</span> <span class="n">files</span> <span class="n">here</span><span class="o">.</span>
 </pre></div>
 </div>
 </div>
