@@ -388,12 +388,12 @@
 <h2>Get access to the collection<a class="headerlink" href="#get-access-to-the-collection" title="Permalink to this headline">¶</a></h2>
 <p>Anyone working/studying in the Australian climate science community
 with an <a class="reference external" href="https://nci.org.au/users/how-access-nci">NCI account</a>
-can access the collection by requesting access to project ia39
-<a class="reference external" href="https://my.nci.org.au/mancini/project/ia39">here</a>.</p>
+can access the collection by requesting access to project jt48
+<a class="reference external" href="https://my.nci.org.au/mancini/project/jt48">here</a>.</p>
 </div>
 <div class="section" id="find-data">
 <h2>Find data<a class="headerlink" href="#find-data" title="Permalink to this headline">¶</a></h2>
-<p>The collection can be found on NCI systems at <code class="docutils literal notranslate"><span class="pre">/g/data/ia39/aus-ref-clim-data-nci/</span></code>.
+<p>The collection can be found on NCI systems at <code class="docutils literal notranslate"><span class="pre">/g/data/jt48/aus-ref-clim-data-nci/</span></code>.
 You can search the subdictories manually to find what you need
 or make use of our <a class="reference external" href="https://github.com/aus-ref-clim-data-nci/acs-replica-intake">intake-esm catalogue</a>.</p>
 <p>A complete dataset listing is also available in the sidebar of this book
@@ -425,7 +425,7 @@ but will sometimes be limited due to storage, staff time or ACS project constrai
 <h2>Add a new dataset<a class="headerlink" href="#add-a-new-dataset" title="Permalink to this headline">¶</a></h2>
 <p>For each new dataset create:</p>
 <ul class="simple">
-<li><p>a folder with the dataset acronym in lowercase letters in <code class="docutils literal notranslate"><span class="pre">/g/data/ia39/aus-ref-clim-data-nci/</span></code>,
+<li><p>a folder with the dataset acronym in lowercase letters in <code class="docutils literal notranslate"><span class="pre">/g/data/jt48/aus-ref-clim-data-nci/</span></code>,
 with a <code class="docutils literal notranslate"><span class="pre">data</span></code> and a <code class="docutils literal notranslate"><span class="pre">code</span></code> subfolders.</p></li>
 <li><p>a new repository in the <a class="reference external" href="https://github.com/aus-ref-clim-data-nci">aus-ref-clim-data-nci github organisation</a>.</p></li>
 <li><p>the repository should be then cloned in the <code class="docutils literal notranslate"><span class="pre">code</span></code> subfolder.</p></li>
@@ -433,11 +433,11 @@ with a <code class="docutils literal notranslate"><span class="pre">data</span><
 <div class="admonition-permissions admonition">
 <p class="admonition-title"><strong>Permissions</strong></p>
 <p>The <code class="docutils literal notranslate"><span class="pre">dataset</span></code> directory should be owned by the data custodian.
-The <code class="docutils literal notranslate"><span class="pre">data</span></code> folder is owned by <code class="docutils literal notranslate"><span class="pre">ia39</span></code> for accounting reasons, and acls are used to give <code class="docutils literal notranslate"><span class="pre">ia39_w</span></code> writing access:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setfacl</span> <span class="o">-</span><span class="n">R</span> <span class="o">-</span><span class="n">m</span> <span class="n">g</span><span class="p">:</span><span class="n">ia39_w</span><span class="p">:</span><span class="n">rwx</span> <span class="n">code</span><span class="o">/</span>
+The <code class="docutils literal notranslate"><span class="pre">data</span></code> folder is owned by <code class="docutils literal notranslate"><span class="pre">jt48</span></code> for accounting reasons, and acls are used to give <code class="docutils literal notranslate"><span class="pre">jt48_w</span></code> writing access:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setfacl</span> <span class="o">-</span><span class="n">R</span> <span class="o">-</span><span class="n">m</span> <span class="n">g</span><span class="p">:</span><span class="n">jt48_w</span><span class="p">:</span><span class="n">rwx</span> <span class="n">code</span><span class="o">/</span>
 </pre></div>
 </div>
-<p>The <code class="docutils literal notranslate"><span class="pre">code</span></code> folder is owned by <code class="docutils literal notranslate"><span class="pre">ia39_w</span></code> with <code class="docutils literal notranslate"><span class="pre">rwx</span></code> permissions for the group, other can read but not write or execute.
+<p>The <code class="docutils literal notranslate"><span class="pre">code</span></code> folder is owned by <code class="docutils literal notranslate"><span class="pre">jt48_w</span></code> with <code class="docutils literal notranslate"><span class="pre">rwx</span></code> permissions for the group, other can read but not write or execute.
 For help with posix and acsl permissions see <a class="reference external" href="https://acdguide.github.io/Governance/tech/permissions.html#acls-cheat-sheet">ACDG Governance guide</a>.</p>
 </div>
 <p>Each repository will contain wherever possible and relevant:</p>
