@@ -23,7 +23,7 @@ A record of updates is kept in `update_log.txt`.
 We've downloaded CMORPH v1.0 data to
 
 ```
-/g/data/ia39/aus-ref-clim-data-nci/cmorph/data/v1.0/30min/8km/<yr>/<mn>/<files>
+/g/data/jt48/aus-ref-clim-data-nci/cmorph/data/v1.0/30min/8km/<yr>/<mn>/<files>
 ```
 
 ## License

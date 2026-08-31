@@ -12,7 +12,7 @@ Code to download and manage the Modern-Era Retrospective analysis for Research a
 MERRA2 data is available in
 
 ```
-/g/data/ia39/aus-ref-clim-data-nci/merra2/data/tmp/<year>/<files>
+/g/data/jt48/aus-ref-clim-data-nci/merra2/data/tmp/<year>/<files>
 ```
 
 ## License
