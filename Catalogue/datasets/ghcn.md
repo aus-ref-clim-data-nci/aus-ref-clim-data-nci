@@ -43,7 +43,7 @@ We've downloaded GHCN data to:
 
 The files are ascii format: `YYYY.csv`
 
-The files format is described in `/g/data/ia39/aus-ref-clim-data-nci/ghcn/code/ghcn-daily-by_year-format.txt` 
+The files format is described in `/g/data/jt48/aus-ref-clim-data-nci/ghcn/code/ghcn-daily-by_year-format.txt` 
 
 ## License
 

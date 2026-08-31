@@ -53,7 +53,7 @@ We are only keeping the current year original files. The last modified dates for
 GPM IMERG V07 data in available in
 
 ```
-/g/data/ia39/aus-ref-clim-data-nci/gpm/data/V07/<yr>/<files>
+/g/data/jt48/aus-ref-clim-data-nci/gpm/data/V07/<yr>/<files>
 ```
 
 ## License
@@ -75,7 +75,7 @@ Jin, Daeho, Oreopoulos, Lazaros, Lee, Dongmin, Tan, Jackson, Cho, Nayeong. 2021.
 No statement provided.
 
 ## Author note
-This data has been updated to from V06B to V07 since it now **supersedes** all prior IMERG versions, as well as superseding the prior TRMM-based TMPA products. The V06B data still exists here: ```/g/data/ia39/aus-ref-clim-data-nci/gpm/data/V06B/<yr>/<files>``` but will be soon removed. You can see more info about this version [here](https://disc.gsfc.nasa.gov/datasets/GPM_3IMERGHH_06/summary).
+This data has been updated to from V06B to V07 since it now **supersedes** all prior IMERG versions, as well as superseding the prior TRMM-based TMPA products. The V06B data still exists here: ```/g/data/jt48/aus-ref-clim-data-nci/gpm/data/V06B/<yr>/<files>``` but will be soon removed. You can see more info about this version [here](https://disc.gsfc.nasa.gov/datasets/GPM_3IMERGHH_06/summary).
 
 
 ## Assistance
