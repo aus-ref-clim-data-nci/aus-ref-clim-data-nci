@@ -34,7 +34,7 @@ A record of updates is kept in `update_log.txt`.
 We've downloaded GPCC data to
 
 ```
-/g/data/ia39/aus-ref-clim-data-nci/gpcc/data/full_data_<frequency>_<version>/<grid>/<files>
+/g/data/jt48/aus-ref-clim-data-nci/gpcc/data/full_data_<frequency>_<version>/<grid>/<files>
 ```
 where `<version>` is:
 - `v1`: daily data only on 1.0 X 1.0 degree grid
