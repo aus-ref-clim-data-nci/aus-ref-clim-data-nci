@@ -21,7 +21,7 @@ This dataset is complete so no updates will be performed in the future unless co
 We've downloaded the CMIP6_ETCCDI data to:
 
 ```
-     /g/data/ia39/aus-ref-clim-data-nci/cmip6_etccdi/data/v1-0/<index-type>/
+     /g/data/jt48/aus-ref-clim-data-nci/cmip6_etccdi/data/v1-0/<index-type>/
      <base>/<frequency>/<experiment>/<model>/<files>
 ```
 where:
